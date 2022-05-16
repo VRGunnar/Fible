@@ -1,0 +1,1 @@
+<h1>Discount page</h1>
