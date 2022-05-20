@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->boolean('enrolled');
-            $table->string('r-nr');
+            $table->string('r_nr');
             $table->string('personal_nr');
             $table->string('library_nr');
             $table->string('school');
