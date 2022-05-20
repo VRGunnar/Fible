@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('password');
             $table->boolean('enrolled');
             $table->string('r-nr');
-            $table->string('password');
             $table->string('personal_nr');
             $table->string('library_nr');
             $table->string('school');
