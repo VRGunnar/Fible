@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Discount>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Subscription>
  */
-class DiscountFactory extends Factory
+class SubscriptionFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -21,6 +21,7 @@ class DiscountFactory extends Factory
             'description' => $this->faker->catchPhrase(),      
             'price' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 1, $max = 10),  
             'logo' => $this->faker->imageUrl($width = 640, $height = 480),
+            'duration' => $this->faker->numberBetween($min = 604800, $max = 2592000),
             'used_count' => $this->faker->numberBetween($min = 0, $max = 100),        
         ];
     }
