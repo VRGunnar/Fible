@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class DiscountController extends Controller
 {
     public function index(){
-        return view('discount/index');
+        $discount = \DB::table('discounts')->get();
+        $data['discount'] = $discount;
+        return view('discount/index', $data);
     }
 }
