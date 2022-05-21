@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DiscountController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,11 +27,9 @@ Route::get('/login', function () {
 });
 
 //Discount page
-Route::get('/discount', function () {
-    return view('discount/index');
-});
+Route::get('/discount', [DiscountController::class, 'index']);
+
 
 //Profile page
-Route::get('/profile', function () {
-    return view('profile/index');
-});
+Route::get('/profile', [ProfileController::class, 'index']);
+
