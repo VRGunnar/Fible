@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-    <h1>Discount page</h1>
+    <h1 class="text-orange-200">Discount page</h1>
 
     @foreach($discount as $d)
     <h1>{{$d->title}}</h1>
