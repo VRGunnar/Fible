@@ -19413,9 +19413,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
   \*******************************/
-/***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nTypeError: Cannot read property 'config' of undefined\n    at getTailwindConfig (/mnt/c/Fible/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:132:62)\n    at /mnt/c/Fible/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:21:92\n    at /mnt/c/Fible/node_modules/tailwindcss/lib/processTailwindFeatures.js:38:11\n    at plugins (/mnt/c/Fible/node_modules/tailwindcss/lib/index.js:33:58)\n    at LazyResult.runOnRoot (/mnt/c/Fible/node_modules/postcss/lib/lazy-result.js:339:16)\n    at LazyResult.runAsync (/mnt/c/Fible/node_modules/postcss/lib/lazy-result.js:393:26)\n    at LazyResult.async (/mnt/c/Fible/node_modules/postcss/lib/lazy-result.js:221:30)\n    at LazyResult.then (/mnt/c/Fible/node_modules/postcss/lib/lazy-result.js:206:17)\n    at processResult (/mnt/c/Fible/node_modules/webpack/lib/NormalModule.js:758:19)\n    at /mnt/c/Fible/node_modules/webpack/lib/NormalModule.js:860:5\n    at /mnt/c/Fible/node_modules/loader-runner/lib/LoaderRunner.js:400:11\n    at /mnt/c/Fible/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/mnt/c/Fible/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/mnt/c/Fible/node_modules/postcss-loader/dist/index.js:142:7)");
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -19642,7 +19645,6 @@ process.umask = function() { return 0; };
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/************************************************************************/
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -19668,9 +19670,10 @@ process.umask = function() { return 0; };
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	__webpack_require__("./resources/js/app.js");
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./resources/css/app.css");
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
