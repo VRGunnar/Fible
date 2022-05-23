@@ -496,7 +496,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.ml-1 {
 .col-start-1{
   grid-column-start: 1;
 }
@@ -574,7 +573,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .inline {
   display: inline;
 }
-.flex {
+.flex{
+  display: flex;
+}
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -608,7 +609,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-auto {
   height: auto;
 }
-.min-h-screen {
 .h-screen{
   height: 100vh;
 }
@@ -648,7 +648,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-2\/6 {
   width: 33.333333%;
 }
-.max-w-6xl {
 .w-full{
   width: 100%;
 }
@@ -711,7 +710,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-none {
   border-style: none;
 }
-.border-gray-200 {
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -776,7 +774,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   -o-object-fit: cover;
      object-fit: cover;
 }
-.p-6 {
 .bg-fWhite{
   --tw-bg-opacity: 1;
   background-color: rgb(239 240 239 / var(--tw-bg-opacity));
@@ -848,7 +845,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pl-8 {
   padding-left: 2rem;
 }
-.text-center {
 .pt-8{
   padding-top: 2rem;
 }
@@ -886,7 +882,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tracking-wide {
   letter-spacing: 0.025em;
 }
-.text-gray-200 {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -938,7 +933,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
-.text-white {
 .text-orange-200{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -959,7 +953,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-text-decoration-color: #EFF0EF;
           text-decoration-color: #EFF0EF;
 }
-.antialiased {
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
