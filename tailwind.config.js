@@ -22,6 +22,7 @@ module.exports = {
         fGreenLight: '#d3f3eb',
         fRed: '#F04E59',
         fGrey: '#8f908f',
+        fGreyApp: '#DFDFDF',
       },
       fontFamily: {
         body: ['Poppins']
