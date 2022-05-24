@@ -46,6 +46,7 @@
         </div>
     </div>
 </div>
+
 <div class="bg-fGreyApp mt-3 p-6 flex flex-grow flex-col rounded-tr-[3em]">
     <div class="flex flex-row justify-center mb-4">
         <button class="btn-active uppercase text-sm text-fBlack font-medium bg-white py-2 px-14 rounded-l-lg choice transition-btn" data-for-tab="Profile">Profiel</button>
