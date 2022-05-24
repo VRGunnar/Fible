@@ -11,6 +11,8 @@
 <body class="bg-white font-body flex flex-col h-screen">
     
     @yield('content')
+
+    @include('components.nav')
     
     @yield('footer-scripts')
 </body>
