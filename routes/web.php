@@ -29,7 +29,7 @@ Route::get('/login', function () {
 Route::get('/discount', [DiscountController::class, 'index']);
 
 //Discount detail pages
-Route::get('/discount/{id}', [DiscountController::class, 'show']);
+Route::get('/discount/{discounts}', [DiscountController::class, 'show']);
 
 
 //Profile page

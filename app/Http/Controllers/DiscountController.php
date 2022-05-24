@@ -14,8 +14,7 @@ class DiscountController extends Controller
         return view('discount/index', $data);
     }
 
-    public function show($id){
-        $discounts = \DB::table('discounts')->where('id', $id)->first();
+    public function show(\App\Models\Discount $discounts){
         $data['discount'] = $discounts;
         return view('discount/show', $data);
     }
