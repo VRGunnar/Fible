@@ -46,10 +46,10 @@
         </div>
     </div>
 </div>
-<div class="bg-fGreyApp mt-3 p-6 flex flex-grow flex-col gap-y-4 rounded-tr-[3em]">
-    <div class="flex flex-row justify-center mb-2">
-        <button class="uppercase text-sm text-white font-medium bg-fGreen py-2 px-14 rounded-l-lg">Profiel</button>
-        <button class="uppercase text-sm text-fBlack font-medium bg-white py-2 px-9 rounded-r-lg">Instellingen</button>
+<div class="bg-fWhite mt-3 p-6 flex flex-grow flex-col gap-y-4 rounded-tr-[3em]">
+    <div class="flex flex-row justify-center mb-2 drop-shadow-[0_3px_6px_rgba(0,0,0,0.16)]">
+        <button class="uppercase text-sm text-white font-medium bg-fGreen py-2 px-14 rounded-l-xl">Profiel</button>
+        <button class="uppercase text-sm text-fBlack font-medium bg-white py-2 px-9 rounded-r-xl">Instellingen</button>
     </div>   
     <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fGreen">
         <div>
