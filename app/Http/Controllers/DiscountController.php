@@ -13,4 +13,9 @@ class DiscountController extends Controller
         $data['subscription'] = $subscriptions;
         return view('discount/index', $data);
     }
+
+    public function show(\App\Models\Discount $discounts){
+        $data['discount'] = $discounts;
+        return view('discount/show', $data);
+    }
 }

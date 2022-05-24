@@ -28,6 +28,9 @@ Route::get('/login', function () {
 //Discount page
 Route::get('/discount', [DiscountController::class, 'index']);
 
+//Discount detail pages
+Route::get('/discount/{discounts}', [DiscountController::class, 'show']);
+
 
 //Profile page
 Route::get('/profile', [ProfileController::class, 'index']);
