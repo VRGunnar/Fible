@@ -3,3 +3,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .btn-active {
+        color: #EFF0EF;
+        background-color: #25C49A;
+    }
+    .btn-non-active:hover {
+        background-color: #d3f3eb;
+    }
+    .tab-active {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        transition: 1s ease-in-out;
+    }
+    .transition-btn {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.5s;
+    }
+}

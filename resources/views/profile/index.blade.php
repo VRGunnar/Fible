@@ -46,25 +46,49 @@
         </div>
     </div>
 </div>
-<div class="bg-fGreyApp mt-3 p-6 flex flex-grow flex-col gap-y-4 rounded-tr-[3em]">
-    <div class="flex flex-row justify-center mb-2">
-        <button class="uppercase text-sm text-white font-medium bg-fGreen py-2 px-14 rounded-l-lg">Profiel</button>
-        <button class="uppercase text-sm text-fBlack font-medium bg-white py-2 px-9 rounded-r-lg">Instellingen</button>
+<div class="bg-fGreyApp mt-3 p-6 flex flex-grow flex-col rounded-tr-[3em]">
+    <div class="flex flex-row justify-center mb-4">
+        <button class="btn-active uppercase text-sm text-fBlack font-medium bg-white py-2 px-14 rounded-l-lg choice transition-btn" data-for-tab="Profile">Profiel</button>
+        <button class="uppercase text-sm text-fBlack font-medium bg-white py-2 px-9 rounded-r-lg choice transition-btn" data-for-tab="Settings">Instellingen</button>
     </div>   
-    <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fGreen">
-        <div>
-            <h2 class="font-base text-fBlack text-base">Abonnement Spotify</h2>
-            <p class="font-base text-fBlack text-xs">Tot 10-12-2022</p>
+    <div class="hidden tab tab-active" data-tab="Profile">
+        <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fGreen">
+            <div>
+                <h2 class="font-base text-fBlack text-base">Abonnement Spotify</h2>
+                <p class="font-base text-fBlack text-xs">Tot 10-12-2022</p>
+            </div>
+            <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fRed h-8 px-6 rounded-full">Stop</button>
         </div>
-        <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fRed h-8 px-6 rounded-full">Stop</button>
+        <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fRed">
+            <div>
+                <h2 class="font-base text-fBlack text-base">Abonnement Kinepolis</h2>
+                <p class="font-base text-fBlack text-xs">Verlopen</p>
+            </div>
+            <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fGreen h-8 px-3 rounded-full">Vernieuw</button>
+        </div>
     </div>
-    <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fRed">
-        <div>
-            <h2 class="font-base text-fBlack text-base">Abonnement Kinepolis</h2>
-            <p class="font-base text-fBlack text-xs">Verlopen</p>
+    <div class="hidden tab px-3" data-tab="Settings">
+        <div class="flex flex-row items-center justify-between mb-2">
+            <h3 class="text-base text-fBlack font-normal">Notificaties</h3>
+            <svg class="w-14 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 23"><defs><style>.uuid-90674127-0958-4e76-b2c7-1c4f52c08ce2{fill:#f5f5f4;}.uuid-8cf2d64e-2461-4a1f-a1d1-6e33e0426d71{fill:#2dc692;}</style></defs><path id="uuid-56bedc15-8202-4d0f-84ba-81cf3334400f" class="uuid-8cf2d64e-2461-4a1f-a1d1-6e33e0426d71" d="M10.5,1H31.5c5.8,0,10.5,4.7,10.5,10.5h0c0,5.8-4.7,10.5-10.5,10.5H10.5C4.7,22,0,17.3,0,11.5H0C0,5.7,4.7,1,10.5,1Z"/><g transform="matrix(1, 0, 0, 1, 0, 0)"><path id="uuid-bc7b99d0-b025-4674-ab16-578eb6c9a90e" class="uuid-90674127-0958-4e76-b2c7-1c4f52c08ce2" d="M30.5,0h1c6.35,0,11.5,5.15,11.5,11.5h0c0,6.35-5.15,11.5-11.5,11.5h-1c-6.35,0-11.5-5.15-11.5-11.5h0C19,5.15,24.15,0,30.5,0Z"/></g></svg>
         </div>
-        <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fGreen h-8 px-3 rounded-full">Vernieuw</button>
+        <div class="flex flex-row justify-between mb-2">
+            <h3 class="text-base text-fBlack font-normal">Automatisch updaten</h3>
+            <svg class="w-14 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 23"><defs><style>.uuid-90674127-0958-4e76-b2c7-1c4f52c08ce2{fill:#f5f5f4;}.uuid-8cf2d64e-2461-4a1f-a1d1-6e33e0426d71{fill:#2dc692;}</style></defs><path id="uuid-56bedc15-8202-4d0f-84ba-81cf3334400f" class="uuid-8cf2d64e-2461-4a1f-a1d1-6e33e0426d71" d="M10.5,1H31.5c5.8,0,10.5,4.7,10.5,10.5h0c0,5.8-4.7,10.5-10.5,10.5H10.5C4.7,22,0,17.3,0,11.5H0C0,5.7,4.7,1,10.5,1Z"/><g transform="matrix(1, 0, 0, 1, 0, 0)"><path id="uuid-bc7b99d0-b025-4674-ab16-578eb6c9a90e" class="uuid-90674127-0958-4e76-b2c7-1c4f52c08ce2" d="M30.5,0h1c6.35,0,11.5,5.15,11.5,11.5h0c0,6.35-5.15,11.5-11.5,11.5h-1c-6.35,0-11.5-5.15-11.5-11.5h0C19,5.15,24.15,0,30.5,0Z"/></g></svg>
+        </div>
+        <div class="flex flex-row justify-between mb-2">
+            <h3 class="text-base text-fBlack font-normal">Donkere modus</h3>
+            <svg class="w-14 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 23"><defs><style>.uuid-90674127-0958-4e76-b2c7-1c4f52c08ce2{fill:#f5f5f4;}.uuid-8cf2d64e-2461-4a1f-a1d1-6e33e0426d71{fill:#2dc692;}</style></defs><path id="uuid-56bedc15-8202-4d0f-84ba-81cf3334400f" class="uuid-8cf2d64e-2461-4a1f-a1d1-6e33e0426d71" d="M10.5,1H31.5c5.8,0,10.5,4.7,10.5,10.5h0c0,5.8-4.7,10.5-10.5,10.5H10.5C4.7,22,0,17.3,0,11.5H0C0,5.7,4.7,1,10.5,1Z"/><g transform="matrix(1, 0, 0, 1, 0, 0)"><path id="uuid-bc7b99d0-b025-4674-ab16-578eb6c9a90e" class="uuid-90674127-0958-4e76-b2c7-1c4f52c08ce2" d="M30.5,0h1c6.35,0,11.5,5.15,11.5,11.5h0c0,6.35-5.15,11.5-11.5,11.5h-1c-6.35,0-11.5-5.15-11.5-11.5h0C19,5.15,24.15,0,30.5,0Z"/></g></svg>
+        </div>
+        <div class="flex flex-row justify-between">
+            <h3 class="text-base text-fBlack font-normal">Taal</h3>
+            <p class="text-base text-fBlack font-normal">Nederlands</p>
+        </div>
     </div>
     <a class="uppercase w-full text-center text-base text-white tracking-widest font-medium bg-fGreen rounded-full py-2 mt-8" href="#">Uitloggen</a>     
 </div>
+@endsection
+
+@section('footer-scripts')
+    <script src="{{ asset('/js/components/profile.js') }}"></script>
 @endsection
