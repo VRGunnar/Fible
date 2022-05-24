@@ -1,0 +1,1 @@
+<h1>{{ $discount->title }}<h1>

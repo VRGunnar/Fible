@@ -13,4 +13,10 @@ class DiscountController extends Controller
         $data['subscription'] = $subscriptions;
         return view('discount/index', $data);
     }
+
+    public function show($id){
+        $discounts = \DB::table('discounts')->where('id', $id)->first();
+        $data['discount'] = $discounts;
+        return view('discount/show', $data);
+    }
 }
