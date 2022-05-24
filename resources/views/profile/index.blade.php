@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-<h1 class="uppercase text-2xl text-center my-10 tracking-[0.5em] font-normal">Profiel</h1>
+<h1 class="uppercase text-2xl text-center mt-10 mb-6 tracking-[0.5em] font-normal">Profiel</h1>
 <div class="w-full p-6">
     <a href="" class="text-fGrey">Tap to flip</a>
     <div class="w-full bg-gradient-to-br from-black to-fGrey rounded-xl mt-2 p-4 drop-shadow-xl	 grid grid-cols-2 grid-rows-2">
@@ -46,7 +46,25 @@
         </div>
     </div>
 </div>
-<div class="bg-fGreyApp mt-3 flex flex-grow rounded-tr-[3em]">
-
+<div class="bg-fGreyApp mt-3 p-6 flex flex-grow flex-col gap-y-4 rounded-tr-[3em]">
+    <div class="flex flex-row justify-center mb-2">
+        <button class="uppercase text-sm text-white font-medium bg-fGreen py-2 px-14 rounded-l-lg">Profiel</button>
+        <button class="uppercase text-sm text-fBlack font-medium bg-white py-2 px-9 rounded-r-lg">Instellingen</button>
+    </div>   
+    <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fGreen">
+        <div>
+            <h2 class="font-base text-fBlack text-base">Abonnement Spotify</h2>
+            <p class="font-base text-fBlack text-xs">Tot 10-12-2022</p>
+        </div>
+        <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fRed h-8 px-6 rounded-full">Stop</button>
+    </div>
+    <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fRed">
+        <div>
+            <h2 class="font-base text-fBlack text-base">Abonnement Kinepolis</h2>
+            <p class="font-base text-fBlack text-xs">Verlopen</p>
+        </div>
+        <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fGreen h-8 px-3 rounded-full">Vernieuw</button>
+    </div>
+    <a class="uppercase w-full text-center text-base text-white tracking-widest font-medium bg-fGreen rounded-full py-2 mt-8" href="#">Uitloggen</a>     
 </div>
 @endsection
