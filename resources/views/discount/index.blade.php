@@ -13,28 +13,48 @@
         <!-- <svg class="w-5 h-5 absolute right-16 top-28 stroke-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.98 18.99"><defs><style>.cls-1{fill:#707070;}</style></defs><path class="fill-fGrey" id="Icon_awesome-search" class="cls-1" d="M18.72,16.42l-3.7-3.7c-.17-.17-.39-.26-.63-.26h-.6c2.62-3.36,2.02-8.2-1.33-10.83C9.1-.99,4.25-.39,1.63,2.97-.99,6.32-.39,11.17,2.97,13.79c2.79,2.18,6.7,2.18,9.49,0v.6c0,.24,.09,.46,.26,.63l3.7,3.7c.35,.35,.91,.35,1.25,0h0l1.05-1.05c.34-.35,.34-.91,0-1.26h0Zm-11.02-3.96c-2.62,0-4.75-2.13-4.75-4.75,0-2.62,2.13-4.75,4.75-4.75,2.62,0,4.75,2.13,4.75,4.75,0,2.62-2.12,4.75-4.74,4.75h0Z"/></svg>-->  
     </div>
 
-    <nav>
-        <ul class="text-sm w-4/5 m-auto flex justify-center mb-4 drop-shadow-[0_3px_6px_rgba(0,0,0,0.16)]">
-            <li class="inline bg-fGreen text-white py-2 px-3 rounded-l-2xl pl-4 active:bg-fGreen active:text-white"><a href="#">Discounts</a></li>
-            <li class="inline bg-white py-2 px-3 active:bg-fGreen active:text-white"><a href="#">Subscriptions</a></li>
-            <li class="inline bg-white py-2 px-3 pr-4 rounded-r-2xl active:bg-fGreen active:text-white"><a href="#">Favourites</a></li>
-        </ul>
-    </nav>
-</div>
+        <div class="text-sm w-4/5 m-auto flex justify-center mb-4 drop-shadow-[0_3px_6px_rgba(0,0,0,0.16)]">
+            <button class="btn-active inline bg-white py-2 px-3 rounded-l-2xl pl-4 choice transition-btn" data-for-tab="dsc">Discounts</button>
+            <button class="inline bg-white py-2 px-3 choice transition-btn" data-for-tab="sbs">Subscriptions</button>
+            <button class="inline bg-white py-2 px-3 pr-4 rounded-r-2xl choice transition-btn" data-for-tab="Favourites">Favourites</button>
+        </div>
+
+    <div class="hidden tab tab-active bg-fWhite" data-tab="dsc">
     @foreach($discount as $d)
     <div class="bg-fWhite">
         <div class="w-80 h-28 bg-white rounded-bl-xl rounded-tr-xl drop-shadow-[0_3px_6px_rgba(0,0,0,0.16)] m-auto my-4 min-h-28">
             <div class="float-left w-3/5">
             <svg class="float-right w-2/6 h-5 relative top-1.5 left-36" id="heart_icon" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.7 420.29"><defs><style>.cls-1{fill:#ffffff;}</style></defs><path class="cls-1" d="M433.6,38.5a130.61,130.61,0,0,0-184.7.1L236,51.5,222.9,38.4a130.49,130.49,0,0,0-184.7-.2,130.49,130.49,0,0,0,.2,184.7L226.2,410.7l.19.17,9.46,9.42,13.08-13.2L433.4,223.3a129.82,129.82,0,0,0,38.3-92.38v0A129.21,129.21,0,0,0,433.6,38.5Z"/></svg>
                 <h1 class="text-sm w-3/4 m-auto mt-3 h-12">{{$d->title}}</h1>
-                <a href="#"><button class="text-white uppercase bg-fGreen border-none text-xs tracking-wide py-2 px-3 rounded-3xl ml-8 w-2/3 mt-2">use discount</button></a>
+                <button class="text-white uppercase bg-fGreen border-none text-xs tracking-wide py-2 px-3 rounded-3xl ml-8 w-2/3 mt-2">use discount</button>
             </div>
             <div class="float-right w-2/5">
                 <img class="w-36 h-28 rounded-tr-xl object-cover" src="{{$d->logo}}" alt="image">
             </div>
         </div>
-        </div>
+    </div>
     @endforeach
     </div>
+
+    <div class="hidden tab" data-tab="sbs">
+        @foreach($subscription as $s)
+        <div class="bg-fWhite">
+            <div class="w-80 h-28 bg-white rounded-bl-xl rounded-tr-xl drop-shadow-[0_3px_6px_rgba(0,0,0,0.16)] m-auto my-4 min-h-28">
+                <div class="float-left w-3/5">
+                <svg class="float-right w-2/6 h-5 relative top-1.5 left-36" id="heart_icon" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.7 420.29"><defs><style>.cls-1{fill:#ffffff;}</style></defs><path class="cls-1" d="M433.6,38.5a130.61,130.61,0,0,0-184.7.1L236,51.5,222.9,38.4a130.49,130.49,0,0,0-184.7-.2,130.49,130.49,0,0,0,.2,184.7L226.2,410.7l.19.17,9.46,9.42,13.08-13.2L433.4,223.3a129.82,129.82,0,0,0,38.3-92.38v0A129.21,129.21,0,0,0,433.6,38.5Z"/></svg>
+                    <h1 class="text-sm w-3/4 m-auto mt-3 h-12">{{$s->title}}</h1>
+                    <button class="text-white uppercase bg-fGreen border-none text-xs tracking-wide py-2 px-3 rounded-3xl ml-8 w-2/3 mt-2">use discount</button>
+                </div>
+                <div class="float-right w-2/5">
+                    <img class="w-36 h-28 rounded-tr-xl object-cover" src="{{$s->logo}}" alt="image">
+                </div>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</div>
 @endsection
 
+@section('footer-scripts')
+<script src="{{ asset('/js/components/discount.js') }}"></script>
+@endsection
