@@ -449,8 +449,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .right-16{
   right: 4rem;
 }
-.top-20{
-  top: 5rem;
+.top-10{
+  top: 2.5rem;
 }
 .top-28{
   top: 7rem;
@@ -505,9 +505,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 .mx-6{
   margin-left: 1.5rem;
@@ -555,8 +555,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-4{
   margin-bottom: 1rem;
 }
-.mt-20{
-  margin-top: 5rem;
+.mt-10{
+  margin-top: 2.5rem;
 }
 .mr-0{
   margin-right: 0px;
@@ -596,9 +596,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .ml-3{
   margin-left: 0.75rem;
-}
-.mt-10{
-  margin-top: 2.5rem;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -967,6 +964,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pr-4{
   padding-right: 1rem;
 }
+.pb-20{
+  padding-bottom: 5rem;
+}
 .text-center{
   text-align: center;
 }
@@ -1103,6 +1103,10 @@ Ensure the default browser behavior of the `hidden` attribute.
         transition-property: all;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 0.5s;
+    }
+.text-xxs {
+        font-size: 0.60rem;
+        line-height: 0.6rem; 
     }
 
 .active\:bg-fGreen:active{

@@ -23,4 +23,9 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 0.5s;
     }
+
+    .text-xxs {
+        font-size: 0.60rem;
+        line-height: 0.6rem; 
+    }
 }

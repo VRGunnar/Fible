@@ -1,6 +1,6 @@
 <nav class="fixed bottom-0 w-full bg-fWhite">
     <ul class="text-sm w-5/5 m-auto flex justify-center justify-around py-1">
-        <li class="text-xs uppercase text-fBlack font-medium tracking-widest py-2 px-3 pl-4 py-2 w-1/3">
+        <li class="text-xxs uppercase text-fBlack font-medium tracking-widest py-2 px-3 pl-4 py-2 w-1/3">
             <a href="/discount">
                 <svg class="w-5 h-5 m-auto" xmlns="http://www.w3.org/2000/svg" width="21.07" height="20.351" viewBox="0 0 21.07 20.351">
                     <g id="Group_27" data-name="Group 27" transform="translate(-88 -786.649)">
@@ -12,7 +12,7 @@
                 <p class="text-center pt-1 active:text-fGreen">kortingen</p>
             </a>
         </li>
-        <li class="text-xs uppercase text-fBlack font-medium tracking-widest py-2 px-3 py-2 w-1/3">
+        <li class="text-xxs uppercase text-fBlack font-medium tracking-widest py-2 px-3 py-2 w-1/3">
             <a href="/">
                 <svg class="w-5 h-5 m-auto" xmlns="http://www.w3.org/2000/svg" width="22.413" height="22" viewBox="0 0 22.413 22">
                     <path class="active:fill-fGreen" id="Path_100" data-name="Path 100" d="M20.863,9.133l0,0L12.126.565a2,2,0,0,0-2.788,0L.607,9.127.6,9.136a1.909,1.909,0,0,0,0,2.73,1.979,1.979,0,0,0,1.308.564l.061,0h.348v6.3A2.288,2.288,0,0,0,4.626,21H8.044a.621.621,0,0,0,.627-.615V15.441a1.044,1.044,0,0,1,1.053-1.032H11.74a1.044,1.044,0,0,1,1.053,1.032v4.942A.621.621,0,0,0,13.42,21h3.418a2.288,2.288,0,0,0,2.307-2.263v-6.3h.323a1.978,1.978,0,0,0,1.394-.567A1.91,1.91,0,0,0,20.863,9.133ZM19.975,11a.719.719,0,0,1-.507.206h-.95a.621.621,0,0,0-.627.615v6.919a1.044,1.044,0,0,1-1.053,1.032h-2.79V15.441a2.288,2.288,0,0,0-2.307-2.263H9.724a2.288,2.288,0,0,0-2.308,2.263v4.327H4.626a1.044,1.044,0,0,1-1.053-1.032V11.817a.621.621,0,0,0-.627-.615H1.983a.718.718,0,0,1-.494-.2.694.694,0,0,1,0-.994h0l8.735-8.566a.726.726,0,0,1,1.013,0L19.972,10l0,0A.7.7,0,0,1,19.975,11Z" transform="translate(0.475 0.501)" fill="#707070" stroke="#707070" stroke-width="1" />
@@ -20,7 +20,7 @@
                 <p class="text-center pt-1 active:text-fGreen">home</p>
             </a>
         </li>
-        <li class="text-xs uppercase text-fBlack font-medium tracking-widest py-2 px-3 pr-4 py-2 w-1/3">
+        <li class="text-xxs uppercase text-fBlack font-medium tracking-widest py-2 px-3 pr-4 py-2 w-1/3">
             <a href="/profile">
                 <svg class="w-5 h-5 m-auto" xmlns="http://www.w3.org/2000/svg" width="18.812" height="21.499" viewBox="0 0 18.812 21.499">
                     <g id="Icon_awesome-user" data-name="Icon awesome-user" fill="none">

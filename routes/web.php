@@ -28,8 +28,8 @@ Route::post('/login', [UserController::class, 'handleLogin']);
 Route::get('/discount', [DiscountController::class, 'index']);
 
 //Discount detail pages
-Route::get('/discount/{discounts}', [DiscountController::class, 'show']);
-Route::get('/discount/{subscriptions}', [DiscountController::class, 'showSubscriptions']);
+Route::get('/discount/discount/{discounts}', [DiscountController::class, 'show']);
+Route::get('/discount/subscription/{subscriptions}', [DiscountController::class, 'showSubscriptions']);
 
 
 
