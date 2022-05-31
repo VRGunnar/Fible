@@ -25,11 +25,11 @@ Route::get('/login', [UserController::class, 'login']);
 Route::post('/login', [UserController::class, 'handleLogin']);
 
 //Discount page
-Route::get('/discount', [DiscountController::class, 'index']);
+Route::get('/discounts', [DiscountController::class, 'index']);
 
 //Discount detail pages
-Route::get('/discount/discount/{discounts}', [DiscountController::class, 'show']);
-Route::get('/discount/subscription/{subscriptions}', [DiscountController::class, 'showSubscriptions']);
+Route::get('/discounts/discount/{discounts}', [DiscountController::class, 'show']);
+Route::get('/discounts/subscription/{subscriptions}', [DiscountController::class, 'showSubscriptions']);
 
 
 

@@ -11,16 +11,16 @@ class DiscountController extends Controller
         $subscriptions = \DB::table('subscriptions')->get();
         $data['discount'] = $discounts;
         $data['subscription'] = $subscriptions;
-        return view('discount/index', $data);
+        return view('discounts/index', $data);
     }
 
     public function show(\App\Models\Discount $discounts){
         $data['discount'] = $discounts;
-        return view('discount/discount/show', $data);
+        return view('discounts/discount/show', $data);
     }
 
     public function showSubscriptions(\App\Models\Subscription $subscriptions){
         $data['subscription'] = $subscriptions;
-        return view('discount/subscription/showSubscriptions', $data);
+        return view('discounts/subscription/showSubscriptions', $data);
     }
 }

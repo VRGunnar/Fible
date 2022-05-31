@@ -25,7 +25,6 @@ function setupTabs() {
             })
             button.classList.add('btn-active');
             button.classList.remove('btn-non-active');
-            console.log(choiceActivate);
             choiceActivate.classList.add('tab-active');
         })
     })
