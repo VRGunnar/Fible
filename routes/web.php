@@ -5,7 +5,6 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\SubscriptionController;
 use App\Models\Subscription;
 
 /*
@@ -31,8 +30,8 @@ Route::get('/login', function () {
 Route::get('/discount', [DiscountController::class, 'index']);
 
 //Discount detail pages
-Route::get('/discount/{discounts}', [DiscountController::class, 'show']);
-Route::get('/discount/{subscriptions}', [DiscountController::class, 'showSubscriptions']);
+Route::get('/discount/discount/{discounts}', [DiscountController::class, 'show']);
+Route::get('/discount/subscription/{subscriptions}', [DiscountController::class, 'showSubscriptions']);
 
 
 
