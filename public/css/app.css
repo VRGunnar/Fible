@@ -509,6 +509,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
 .ml-1{
   margin-left: 0.25rem;
 }
@@ -586,6 +602,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-2{
   margin-bottom: 0.5rem;
+}
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 .inline{
   display: inline;
@@ -689,6 +708,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-14{
   width: 3.5rem;
 }
+.w-12{
+  width: 3rem;
+}
+.w-48{
+  width: 12rem;
+}
+.w-40{
+  width: 10rem;
+}
 .max-w-6xl{
   max-width: 72rem;
 }
@@ -740,6 +768,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-full{
   border-radius: 9999px;
 }
+.rounded-lg{
+  border-radius: 0.5rem;
+}
 .rounded-l-2xl{
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -768,6 +799,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-tr-\[3em\]{
   border-top-right-radius: 3em;
 }
+.rounded-tr-full{
+  border-top-right-radius: 9999px;
+}
+.rounded-tr-2xl{
+  border-top-right-radius: 1rem;
+}
+.rounded-tr-\[2xl\]{
+  border-top-right-radius: 2xl;
+}
+.rounded-tr-\[2rem\]{
+  border-top-right-radius: 2rem;
+}
+.rounded-tr-\[10rem\]{
+  border-top-right-radius: 10rem;
+}
+.rounded-tr-\[6rem\]{
+  border-top-right-radius: 6rem;
+}
+.rounded-tr-\[5rem\]{
+  border-top-right-radius: 5rem;
+}
+.rounded-bl-\[5rem\]{
+  border-bottom-left-radius: 5rem;
+}
 .border-2{
   border-width: 2px;
 }
@@ -780,6 +835,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+.border-fGreen{
+  --tw-border-opacity: 1;
+  border-color: rgb(37 196 154 / var(--tw-border-opacity));
 }
 .border-b-fGreen{
   --tw-border-opacity: 1;
@@ -854,6 +913,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-3{
   padding: 0.75rem;
 }
+.p-8{
+  padding: 2rem;
+}
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -881,6 +943,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-9{
   padding-left: 2.25rem;
   padding-right: 2.25rem;
+}
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .pt-8{
   padding-top: 2rem;
@@ -1039,6 +1109,11 @@ Ensure the default browser behavior of the `hidden` attribute.
         line-height: 0.6rem; 
     }
 
+.active\:bg-fGreen:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 196 154 / var(--tw-bg-opacity));
+}
+
 .active\:fill-fGreen:active{
   fill: #25C49A;
 }
@@ -1046,6 +1121,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .active\:text-fGreen:active{
   --tw-text-opacity: 1;
   color: rgb(37 196 154 / var(--tw-text-opacity));
+}
+
+.active\:text-white:active{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (prefers-color-scheme: dark){
