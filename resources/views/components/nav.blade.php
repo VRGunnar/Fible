@@ -1,7 +1,7 @@
 <nav class="fixed bottom-0 w-full bg-fWhite">
     <ul class="text-sm w-5/5 m-auto flex justify-center justify-around py-1">
         <li class="text-xxs uppercase text-fBlack font-medium tracking-widest py-2 px-3 pl-4 py-2 w-1/3">
-            <a href="/discount">
+            <a href="/discounts">
                 <svg class="w-5 h-5 m-auto" xmlns="http://www.w3.org/2000/svg" width="21.07" height="20.351" viewBox="0 0 21.07 20.351">
                     <g id="Group_27" data-name="Group 27" transform="translate(-88 -786.649)">
                         <rect class="active:fill-fGreen" id="Rectangle_443" data-name="Rectangle 443" width="3.496" height="24.633" rx="1.748" transform="translate(106.138 786.649) rotate(45)" fill="#707070" />
