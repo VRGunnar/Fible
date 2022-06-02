@@ -13,4 +13,8 @@ class Discount extends Model
     {
         return $this->belongsToMany(User::class);
     }
+
+    public function favorites() {
+        return $this->hasMany(Favorite::class);
+    }
 }
