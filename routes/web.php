@@ -18,10 +18,10 @@ use App\Http\Controllers\ProfileController;
 */
 
 //Home page
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 //Login page
-Route::get('/login', [UserController::class, 'login']);
+Route::get('/login', [UserController::class, 'login'])->name('login');
 Route::post('/login', [UserController::class, 'handleLogin']);
 
 //Discount page
@@ -35,4 +35,6 @@ Route::get('/discounts/subscription/{subscriptions}', [DiscountController::class
 
 //Profile page
 Route::get('/profile', [ProfileController::class, 'index']);
+Route::post('logout', [UserController::class, 'logout'])->name('logout');
+
 
