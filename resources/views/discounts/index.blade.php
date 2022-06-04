@@ -4,7 +4,7 @@
 <div class="pb-20 bg-fWhite">
     <div class="text-sm w-4/5 m-auto flex justify-center mb-4 drop-shadow-[0_3px_6px_rgba(0,0,0,0.16)] mb-4 mt-10">
         <button class="btn-active inline bg-white py-2 px-2 rounded-l-2xl pl-4 choice transition-btn" data-for-tab="discounts">Kortingen</button>
-        <button class="inline bg-white py-2 px-2 choice transition-btn" data-for-tab="subscriptions">Abbonnementen</button>
+        <button class="inline bg-white py-2 px-2 choice transition-btn" data-for-tab="subscriptions">Abonnementen</button>
         <button class="inline bg-white py-2 px-2 pr-4 rounded-r-2xl choice transition-btn" data-for-tab="favourites">Favorieten</button>
     </div>
 
