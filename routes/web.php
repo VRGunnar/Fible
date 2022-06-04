@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,6 @@ Route::get('/discounts/subscription/{subscriptions}', [DiscountController::class
 //Profile page
 Route::get('/profile', [ProfileController::class, 'index']);
 
+
+//Dashboard page web
+Route::get('/dashboard', [DashboardController::class, 'index']);
