@@ -86,7 +86,10 @@
             <p class="text-base text-fBlack font-normal">Nederlands</p>
         </div>
     </div>
-    <a class="uppercase w-full text-center text-base text-white tracking-widest font-medium bg-fGreen rounded-full py-2 mt-8" href="#">Uitloggen</a>     
+    <form method="post" action="{{ route('logout') }}">
+        @csrf
+        <button class="uppercase w-full text-center text-base text-white tracking-widest font-medium bg-fGreen rounded-full py-2 mt-8">Uitloggen</button>
+    </form>
 </div>
 @endsection
 
