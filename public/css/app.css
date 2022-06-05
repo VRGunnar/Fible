@@ -509,10 +509,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.my-1{
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -585,14 +581,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-10{
   margin-bottom: 2.5rem;
 }
-.mb-32{
-  margin-bottom: 8rem;
+.mb-36{
+  margin-bottom: 9rem;
 }
 .mb-12{
   margin-bottom: 3rem;
 }
 .mb-52{
   margin-bottom: 13rem;
+}
+.mb-32{
+  margin-bottom: 8rem;
 }
 .inline{
   display: inline;
@@ -822,6 +821,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-fRed{
   --tw-bg-opacity: 1;
   background-color: rgb(240 78 89 / var(--tw-bg-opacity));
+}
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
