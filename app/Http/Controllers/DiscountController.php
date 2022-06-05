@@ -17,30 +17,34 @@ class DiscountController extends Controller
     public function index(){
         $discounts = \DB::table('discounts')->get();
         $subscriptions = \DB::table('subscriptions')->get();
+        $favorites = [];
+        $fill = 'fill';
+        $type = 'type';
         foreach($discounts as $d) {
-            $fill = 'fill';
             $d->$fill = 'fill-fGrey';
             $favorite = Favorite::where(function($query) use ($d) {
                 $query->where('user_id', Auth::user()->id)->where('discount_id', $d->id);
             })->get();
             foreach($favorite as $f) {
                 $d->$fill = 'fill-fRed';
+                $d->$type = 'discount';
+                array_push($favorites, $d);
             }
         }
         foreach($subscriptions as $s) {
-            $fill = 'fill';
             $s->$fill = 'fill-fGrey';
             $favorite = Favorite::where(function($query) use ($s) {
                 $query->where('user_id', Auth::user()->id)->where('subscription_id', $s->id);
             })->get();
             foreach($favorite as $f) {
                 $s->$fill = 'fill-fRed';
+                $s->$type = 'subscription';
+                array_push($favorites, $s);
             }
         }
-
         $data['discount'] = $discounts;
         $data['subscription'] = $subscriptions;
-        
+        $data['favorites'] = $favorites;
         return view('discounts/index', $data);
     }
 
