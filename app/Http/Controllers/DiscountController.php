@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Discount;
 use Illuminate\Http\Request;
 use PhpParser\Node\Stmt\Foreach_;
 use App\Models\Favorite;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class DiscountController extends Controller
 {
@@ -17,6 +19,9 @@ class DiscountController extends Controller
     public function index(){
         $discounts = \DB::table('discounts')->get();
         $subscriptions = \DB::table('subscriptions')->get();
+
+        $favorites_id = json_decode( json_encode(\DB::table('favorites')->get('discount_id')), true);
+
         foreach($discounts as $d) {
             $fill = 'fill';
             $d->$fill = 'fill-fGrey';
@@ -38,8 +43,13 @@ class DiscountController extends Controller
             }
         }
 
+        $favo_id = Discount::find($favorites_id)->pluck('id');
+        $favo = Discount::find($favo_id);
+
+
         $data['discount'] = $discounts;
         $data['subscription'] = $subscriptions;
+        $data['favo'] = $favo;
         
         return view('discounts/index', $data);
     }
@@ -70,4 +80,5 @@ class DiscountController extends Controller
         $data['subscription'] = $subscriptions;
         return view('discounts/subscription/showSubscriptions', $data);
     }
+    
 }
