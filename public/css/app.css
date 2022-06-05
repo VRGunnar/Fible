@@ -587,14 +587,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-10{
   margin-bottom: 2.5rem;
 }
-.mb-36{
-  margin-bottom: 9rem;
+.mb-52{
+  margin-bottom: 13rem;
 }
 .mb-12{
   margin-bottom: 3rem;
-}
-.mb-52{
-  margin-bottom: 13rem;
 }
 .mb-32{
   margin-bottom: 8rem;
@@ -828,10 +825,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(240 78 89 / var(--tw-bg-opacity));
 }
-.bg-red-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -1061,13 +1054,16 @@ Ensure the default browser behavior of the `hidden` attribute.
         font-size: 0.60rem;
         line-height: 0.6rem; 
     }
+
 .active\:fill-fGreen:active{
   fill: #25C49A;
 }
+
 .active\:text-fGreen:active{
   --tw-text-opacity: 1;
   color: rgb(37 196 154 / var(--tw-text-opacity));
 }
+
 @media (prefers-color-scheme: dark){
 
   .dark\:border-gray-700{
@@ -1100,6 +1096,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 }
+
 @media (min-width: 640px){
 
   .sm\:ml-0{
@@ -1147,6 +1144,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     text-align: right;
   }
 }
+
 @media (min-width: 768px){
 
   .md\:grid-cols-2{
@@ -1161,6 +1159,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-left-width: 1px;
   }
 }
+
 @media (min-width: 1024px){
 
   .lg\:px-8{
