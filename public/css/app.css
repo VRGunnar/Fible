@@ -838,6 +838,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .fill-fGrey{
   fill: #8f908f;
 }
+.fill-fRed{
+  fill: #F04E59;
+}
 .stroke-fGreyApp{
   stroke: #DFDFDF;
 }
