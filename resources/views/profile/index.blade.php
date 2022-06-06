@@ -2,9 +2,9 @@
 
 @section('content')
 <h1 class="uppercase text-2xl text-center mt-10 mb-6 tracking-[0.5em] font-normal">Profiel</h1>
-<div class="w-full p-6">
+<div class="w-full p-6 max-w-sm m-auto">
     <a href="" class="text-fGrey">Tap to flip</a>
-    <div class="w-full bg-gradient-to-br from-black to-fGrey rounded-xl mt-2 p-4 drop-shadow-xl	 grid grid-cols-2 grid-rows-2">
+    <div class="w-full bg-gradient-to-br from-black to-fGrey rounded-xl mt-2 p-4 drop-shadow-xl grid grid-cols-2 grid-rows-2 max-w-sm m-auto">
         <svg class="w-20 h-auto col-start-1 col-end-3 row-start-1 row-end-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.39 52.94">
             <defs>
                 <style>
@@ -88,7 +88,7 @@
     </div>
     <form method="post" action="{{ route('logout') }}">
         @csrf
-        <button class="uppercase w-full text-center text-base text-white tracking-widest font-medium bg-fGreen rounded-full py-2 mt-8">Uitloggen</button>
+        <button class="uppercase w-full text-center text-base text-white tracking-widest font-medium bg-fGreen rounded-full py-2 mt-8 max-w-sm block m-auto">Uitloggen</button>
     </form>
 </div>
 @endsection
