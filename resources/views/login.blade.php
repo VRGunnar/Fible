@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="mx-8 my-auto p-8 bg-white flex flex-col items-center rounded-tr-[5rem] rounded-bl-[5rem]">
-<img class="w-40 h-auto mb-5 mt-0" src="/images/logo_fible.svg" alt="">
+<img class="w-60 h-auto mb-5 mt-0" src="/images/logo_fible.svg" alt="">
     <form method="post" action="{{ url('/login') }}">
         @csrf
         <div class="text-fBlack mb-4">

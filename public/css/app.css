@@ -519,6 +519,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -705,6 +713,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-11\/12{
   width: 91.666667%;
 }
+.w-52{
+  width: 13rem;
+}
+.w-60{
+  width: 15rem;
+}
 .max-w-6xl{
   max-width: 72rem;
 }
@@ -849,6 +863,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-fRed{
   --tw-bg-opacity: 1;
   background-color: rgb(240 78 89 / var(--tw-bg-opacity));
+}
+.bg-green-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+.bg-pink-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
