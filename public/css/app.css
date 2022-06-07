@@ -464,11 +464,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .col-end-3{
   grid-column-end: 3;
 }
+.row-span-1{
+  grid-row: span 1 / span 1;
+}
 .row-start-1{
   grid-row-start: 1;
 }
 .row-start-2{
   grid-row-start: 2;
+}
+.row-start-auto{
+  grid-row-start: auto;
 }
 .row-end-2{
   grid-row-end: 2;
@@ -484,9 +490,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .m-auto{
   margin: auto;
-}
-.m-2{
-  margin: 0.5rem;
 }
 .mx-8{
   margin-left: 2rem;
@@ -542,14 +545,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-mt-px{
   margin-top: -1px;
 }
-.mt-10{
-  margin-top: 2.5rem;
+.mt-16{
+  margin-top: 4rem;
 }
 .mb-10{
   margin-bottom: 2.5rem;
 }
 .ml-10{
   margin-left: 2.5rem;
+}
+.mb-60{
+  margin-bottom: 15rem;
+}
+.mr-10{
+  margin-right: 2.5rem;
+}
+.mt-10{
+  margin-top: 2.5rem;
 }
 .mb-8{
   margin-bottom: 2rem;
@@ -593,27 +605,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-12{
   margin-bottom: 3rem;
 }
-.mt-14{
-  margin-top: 3.5rem;
-}
-.mt-16{
-  margin-top: 4rem;
-}
-.mr-10{
-  margin-right: 2.5rem;
-}
-.mb-20{
-  margin-bottom: 5rem;
-}
-.mb-40{
-  margin-bottom: 10rem;
-}
-.mb-80{
-  margin-bottom: 20rem;
-}
-.mb-60{
-  margin-bottom: 15rem;
-}
 .inline{
   display: inline;
 }
@@ -641,6 +632,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-screen{
   height: 100vh;
 }
+.h-5\/6{
+  height: 83.333333%;
+}
 .h-full{
   height: 100%;
 }
@@ -655,12 +649,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-64{
   height: 16rem;
-}
-.h-4\/5{
-  height: 80%;
-}
-.h-5\/6{
-  height: 83.333333%;
 }
 .min-h-screen{
   min-height: 100vh;
@@ -686,11 +674,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-1\/3{
   width: 33.333333%;
 }
+.w-screen{
+  width: 100vw;
+}
 .w-24{
   width: 6rem;
 }
 .w-16{
   width: 4rem;
+}
+.w-14{
+  width: 3.5rem;
+}
+.w-9\/12{
+  width: 75%;
+}
+.w-60{
+  width: 15rem;
 }
 .w-4\/5{
   width: 80%;
@@ -722,36 +722,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-20{
   width: 5rem;
 }
-.w-14{
-  width: 3.5rem;
-}
-.w-9\/12{
-  width: 75%;
-}
 .w-11\/12{
   width: 91.666667%;
 }
-.w-screen{
-  width: 100vw;
+.w-1\/2{
+  width: 50%;
 }
 .w-fit{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-.w-max{
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-.w-3\/12{
-  width: 25%;
-}
-.w-60{
-  width: 15rem;
-}
-.w-4{
-  width: 1rem;
 }
 .max-w-6xl{
   max-width: 72rem;
@@ -795,8 +775,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-around{
   justify-content: space-around;
 }
-.gap-0{
-  gap: 0px;
+.gap-4{
+  gap: 1rem;
 }
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -817,12 +797,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .rounded-2xl{
   border-radius: 1rem;
-}
-.rounded-md{
-  border-radius: 0.375rem;
-}
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 .rounded-l-2xl{
   border-top-left-radius: 1rem;
@@ -895,6 +869,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+.bg-neutral-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+}
 .bg-fGreyApp{
   --tw-bg-opacity: 1;
   background-color: rgb(223 223 223 / var(--tw-bg-opacity));
@@ -902,22 +880,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-fRed{
   --tw-bg-opacity: 1;
   background-color: rgb(240 78 89 / var(--tw-bg-opacity));
-}
-.bg-red-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-.bg-green-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-}
-.bg-gray-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-.bg-neutral-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
@@ -954,14 +916,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-2{
   padding: 0.5rem;
 }
+.p-1{
+  padding: 0.25rem;
+}
 .p-4{
   padding: 1rem;
 }
 .p-3{
   padding: 0.75rem;
-}
-.p-1{
-  padding: 0.25rem;
 }
 .px-2{
   padding-left: 0.5rem;
@@ -1022,41 +984,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-20{
   padding-bottom: 5rem;
 }
-.pl-5{
-  padding-left: 1.25rem;
-}
-.pr-5{
-  padding-right: 1.25rem;
-}
-.pl-20{
-  padding-left: 5rem;
-}
-.pr-20{
-  padding-right: 5rem;
-}
 .pl-10{
   padding-left: 2.5rem;
 }
 .pt-10{
   padding-top: 2.5rem;
 }
-.pr-12{
-  padding-right: 3rem;
-}
-.pr-16{
-  padding-right: 4rem;
-}
-.pr-24{
-  padding-right: 6rem;
-}
-.pr-28{
-  padding-right: 7rem;
+.pl-1{
+  padding-left: 0.25rem;
 }
 .pr-32{
   padding-right: 8rem;
 }
-.pl-1{
-  padding-left: 0.25rem;
+.pr-6{
+  padding-right: 1.5rem;
+}
+.pr-12{
+  padding-right: 3rem;
 }
 .text-center{
   text-align: center;
