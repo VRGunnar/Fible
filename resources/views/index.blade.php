@@ -3,7 +3,7 @@
 @section('content')
 <img class="w-60 h-auto my-8 m-auto" src="/images/logo_fible.svg" alt="">
 
-<div class="mb-6 w-11/12 m-auto mt-0">
+<div class="mb-6 w-11/12 m-auto mt-0 max-w-sm">
     <h1 class="uppercase w-10/12 m-auto">Hot deals</h1>
 
     @foreach($hot_discount as $d)
@@ -23,7 +23,7 @@
 
 </div>
 
-<div class="mb-6 w-11/12 m-auto mt-0">
+<div class="mb-6 w-11/12 m-auto mt-0 max-w-sm">
     <h1 class="uppercase w-10/12 m-auto">Hot subscriptions</h1>
 
     @foreach($hot_subscription as $s)
