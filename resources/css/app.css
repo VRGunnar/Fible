@@ -28,4 +28,26 @@
         font-size: 0.60rem;
         line-height: 0.6rem; 
     }
+
+    .fill-fRed{
+        fill: #F04E59;
+    }
+      
+
+    div#social-links {
+        margin: 0 auto;
+    }
+    div#social-links ul {
+        padding: 0rem;
+        margin: auto;
+        width: 10.5rem;
+    }
+    div#social-links ul li {
+        display: inline-block;
+    }          
+    div#social-links ul li a {
+        margin: 1rem;
+        font-size: 1.5rem;
+        color: #25C49A;
+    }
 }
