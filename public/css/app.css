@@ -600,8 +600,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-12{
   margin-bottom: 3rem;
 }
-.mb-32{
-  margin-bottom: 8rem;
+.mb-16{
+  margin-bottom: 4rem;
+}
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 .block{
   display: block;
@@ -1063,13 +1066,14 @@ Ensure the default browser behavior of the `hidden` attribute.
         font-size: 0.60rem;
         line-height: 0.6rem; 
     }
+/* social buttons */
 div#social-links {
         margin: 0 auto;
     }
 div#social-links ul {
         padding: 0rem;
         margin: auto;
-        width: 10.5rem;
+        width: 8.3rem;
     }
 div#social-links ul li {
         display: inline-block;
@@ -1078,6 +1082,12 @@ div#social-links ul li a {
         margin: 1rem;
         font-size: 1.5rem;
         color: #25C49A;
+    }
+div#social-links ul li:nth-child(1) a {
+        margin-left: 0rem;
+    }
+div#social-links ul li:nth-child(3) a {
+        margin-right: 0rem;
     }
 
 .active\:fill-fGreen:active{
