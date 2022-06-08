@@ -57,8 +57,20 @@ class DiscountController extends Controller
         foreach($favorite as $f) {
             $discounts->$fill = 'fill-fRed';
         }
-        $data['discount'] = $discounts;
+
+
+        $currentURL = url()->current();
+
+        $shareComponent = \Share::page(
+            $currentURL, 'Check deze studentenkorting op Fible!' //URL van detailpagina + bericht hier
+        )
+        ->facebook()
+        ->twitter()
+        ->whatsapp();    
         
+        $data = compact('shareComponent');
+        $data['discount'] = $discounts;
+      
         return view('discounts/discount/show', $data);
     }
 
@@ -71,7 +83,19 @@ class DiscountController extends Controller
         foreach($favorite as $f) {
             $subscriptions->$fill = 'fill-fRed';
         }
+
+        $currentURL = url()->current();
+
+        $shareComponent = \Share::page(
+            $currentURL, 'Check deze studentenkorting op Fible!' //URL van detailpagina + bericht hier
+        )
+        ->facebook()
+        ->twitter()
+        ->whatsapp();    
+        
+        $data = compact('shareComponent');
         $data['subscription'] = $subscriptions;
+      
         return view('discounts/subscription/showSubscriptions', $data);
     }
 }
