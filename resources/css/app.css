@@ -33,14 +33,14 @@
         fill: #F04E59;
     }
       
-
+    /* social buttons */
     div#social-links {
         margin: 0 auto;
     }
     div#social-links ul {
         padding: 0rem;
         margin: auto;
-        width: 10.5rem;
+        width: 8.3rem;
     }
     div#social-links ul li {
         display: inline-block;
@@ -49,5 +49,11 @@
         margin: 1rem;
         font-size: 1.5rem;
         color: #25C49A;
+    }
+    div#social-links ul li:nth-child(1) a {
+        margin-left: 0rem;
+    }
+    div#social-links ul li:nth-child(3) a {
+        margin-right: 0rem;
     }
 }
