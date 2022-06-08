@@ -1,5 +1,5 @@
 <nav class="fixed bottom-0 w-full bg-fWhite">
-    <ul class="text-sm w-5/5 m-auto flex justify-center justify-around py-1 sm:max-w-2xl sm:m-auto">
+    <ul class="text-sm w-5/5 m-auto flex justify-center justify-around pt-1 sm:max-w-2xl sm:m-auto">
         <li class="text-xxs uppercase text-fBlack font-medium tracking-widest py-2 px-3 pl-4 py-2 w-1/3">
             <a href="/discounts">
                 <svg class="w-5 h-5 m-auto" xmlns="http://www.w3.org/2000/svg" width="21.07" height="20.351" viewBox="0 0 21.07 20.351">

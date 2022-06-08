@@ -461,8 +461,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-8{
   top: 2rem;
 }
-.right-8{
-  right: 2rem;
+.top-12{
+  top: 3rem;
 }
 .col-start-1{
   grid-column-start: 1;
@@ -491,6 +491,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-auto{
   margin: auto;
 }
+.m-0{
+  margin: 0px;
+}
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -518,6 +521,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -596,12 +607,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-16{
   margin-bottom: 4rem;
-}
-.mb-24{
-  margin-bottom: 6rem;
-}
-.mb-20{
-  margin-bottom: 5rem;
 }
 .mb-12{
   margin-bottom: 3rem;
@@ -707,6 +712,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-9\/12{
   width: 75%;
+}
+.w-1\/12{
+  width: 8.333333%;
+}
+.w-24{
+  width: 6rem;
 }
 .max-w-sm{
   max-width: 24rem;
@@ -844,6 +855,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(240 78 89 / var(--tw-bg-opacity));
 }
+.bg-red-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+.bg-green-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+.bg-blue-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+.bg-fGrey{
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 144 143 / var(--tw-bg-opacity));
+}
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+.bg-fBlack{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 39 46 / var(--tw-bg-opacity));
+}
+.bg-navBlack{
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 31 37 / var(--tw-bg-opacity));
+}
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -854,8 +893,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .to-fGrey{
   --tw-gradient-to: #8f908f;
 }
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
 .fill-fGrey{
   fill: #8f908f;
+}
+.fill-fRed{
+  fill: #F04E59;
 }
 .stroke-fGreyApp{
   stroke: #DFDFDF;
@@ -865,6 +910,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .stroke-2{
   stroke-width: 2;
+}
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .object-cover{
   -o-object-fit: cover;
@@ -931,6 +980,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pb-20{
   padding-bottom: 5rem;
+}
+.pb-32{
+  padding-bottom: 8rem;
+}
+.pt-10{
+  padding-top: 2.5rem;
+}
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+.pb-12{
+  padding-bottom: 3rem;
 }
 .text-center{
   text-align: center;
