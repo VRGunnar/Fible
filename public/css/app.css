@@ -702,11 +702,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-9\/12{
   width: 75%;
 }
-.max-w-6xl{
-  max-width: 72rem;
-}
 .max-w-sm{
   max-width: 24rem;
+}
+.max-w-6xl{
+  max-width: 72rem;
 }
 .max-w-xl{
   max-width: 36rem;
@@ -1060,36 +1060,13 @@ Ensure the default browser behavior of the `hidden` attribute.
         font-size: 0.60rem;
         line-height: 0.6rem; 
     }
-
-.hover\:bg-violet-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(124 58 237 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-fGreen:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 196 154 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-red-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-yellow-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
 .active\:fill-fGreen:active{
   fill: #25C49A;
 }
-
 .active\:text-fGreen:active{
   --tw-text-opacity: 1;
   color: rgb(37 196 154 / var(--tw-text-opacity));
 }
-
 @media (prefers-color-scheme: dark){
 
   .dark\:border-gray-700{
@@ -1122,7 +1099,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 }
-
 @media (min-width: 640px){
 
   .sm\:m-auto{
@@ -1204,7 +1180,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     text-align: right;
   }
 }
-
 @media (min-width: 768px){
 
   .md\:grid-cols-2{
@@ -1219,7 +1194,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-left-width: 1px;
   }
 }
-
 @media (min-width: 1024px){
 
   .lg\:px-8{
@@ -1227,7 +1201,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 2rem;
   }
 }
-
 @media (min-width: 432px){
 
   .search\:float-none{
