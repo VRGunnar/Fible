@@ -23,7 +23,7 @@
 
 </div>
 
-<div class="mb-6 w-11/12 mt-0 m-auto max-w-sm">
+<div class="pb-12 w-11/12 mt-0 m-auto max-w-sm">
     <h1 class="uppercase w-10/12 m-auto">Hot subscriptions</h1>
 
     @foreach($hot_subscription as $s)

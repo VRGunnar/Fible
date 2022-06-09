@@ -458,9 +458,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-24{
   top: 6rem;
 }
-.top-8{
-  top: 2rem;
-}
 .top-12{
   top: 3rem;
 }
@@ -491,12 +488,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-auto{
   margin: auto;
 }
-.m-0{
-  margin: 0px;
-}
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .my-2{
   margin-top: 0.5rem;
@@ -510,10 +504,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: auto;
   margin-bottom: auto;
 }
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -521,14 +511,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-}
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.mx-0{
-  margin-left: 0px;
-  margin-right: 0px;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -599,17 +581,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-14{
   margin-bottom: 3.5rem;
 }
-.mt-6{
-  margin-top: 1.5rem;
-}
 .mb-10{
   margin-bottom: 2.5rem;
 }
 .mb-16{
   margin-bottom: 4rem;
-}
-.mb-12{
-  margin-bottom: 3rem;
 }
 .block{
   display: block;
@@ -712,12 +688,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-9\/12{
   width: 75%;
-}
-.w-1\/12{
-  width: 8.333333%;
-}
-.w-24{
-  width: 6rem;
 }
 .max-w-sm{
   max-width: 24rem;
@@ -855,30 +825,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(240 78 89 / var(--tw-bg-opacity));
 }
-.bg-red-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-.bg-green-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
-}
-.bg-blue-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-.bg-fGrey{
-  --tw-bg-opacity: 1;
-  background-color: rgb(143 144 143 / var(--tw-bg-opacity));
-}
-.bg-red-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-.bg-fBlack{
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 39 46 / var(--tw-bg-opacity));
-}
 .bg-navBlack{
   --tw-bg-opacity: 1;
   background-color: rgb(19 31 37 / var(--tw-bg-opacity));
@@ -893,14 +839,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .to-fGrey{
   --tw-gradient-to: #8f908f;
 }
-.bg-no-repeat{
-  background-repeat: no-repeat;
-}
 .fill-fGrey{
   fill: #8f908f;
-}
-.fill-fRed{
-  fill: #F04E59;
 }
 .stroke-fGreyApp{
   stroke: #DFDFDF;
@@ -966,14 +906,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 2.25rem;
   padding-right: 2.25rem;
 }
+.pb-12{
+  padding-bottom: 3rem;
+}
 .pt-8{
   padding-top: 2rem;
 }
-.pl-4{
-  padding-left: 1rem;
-}
 .pt-1{
   padding-top: 0.25rem;
+}
+.pl-4{
+  padding-left: 1rem;
 }
 .pr-4{
   padding-right: 1rem;
@@ -981,17 +924,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-20{
   padding-bottom: 5rem;
 }
-.pb-32{
-  padding-bottom: 8rem;
-}
 .pt-10{
   padding-top: 2.5rem;
 }
-.pb-6{
-  padding-bottom: 1.5rem;
-}
-.pb-12{
-  padding-bottom: 3rem;
+.pb-32{
+  padding-bottom: 8rem;
 }
 .text-center{
   text-align: center;
@@ -1150,16 +1087,13 @@ div#social-links ul li:nth-child(1) a {
 div#social-links ul li:nth-child(3) a {
         margin-right: 0rem;
     }
-
 .active\:fill-fGreen:active{
   fill: #25C49A;
 }
-
 .active\:text-fGreen:active{
   --tw-text-opacity: 1;
   color: rgb(37 196 154 / var(--tw-text-opacity));
 }
-
 @media (prefers-color-scheme: dark){
 
   .dark\:border-gray-700{
@@ -1192,7 +1126,6 @@ div#social-links ul li:nth-child(3) a {
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 }
-
 @media (min-width: 640px){
 
   .sm\:m-auto{
@@ -1274,7 +1207,6 @@ div#social-links ul li:nth-child(3) a {
     text-align: right;
   }
 }
-
 @media (min-width: 768px){
 
   .md\:grid-cols-2{
@@ -1289,7 +1221,6 @@ div#social-links ul li:nth-child(3) a {
     border-left-width: 1px;
   }
 }
-
 @media (min-width: 1024px){
 
   .lg\:px-8{
@@ -1297,7 +1228,6 @@ div#social-links ul li:nth-child(3) a {
     padding-right: 2rem;
   }
 }
-
 @media (min-width: 432px){
 
   .search\:float-none{
