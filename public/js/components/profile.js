@@ -1,9 +1,7 @@
 if (document.readyState !== 'loading') {
-    console.log('This is not the crappy domloader');
     setupTabs();
 } else {
     document.addEventListener('DOMContentLoaded', function () {
-        console.log('document was not ready, place code here');
         setupTabs();
     });
 }
@@ -29,3 +27,8 @@ function setupTabs() {
         })
     })
 }
+
+const card = document.querySelector('.cardInner');
+card.addEventListener('click', function () {
+    card.classList.toggle('isFlipped');
+})
