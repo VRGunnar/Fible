@@ -1,7 +1,8 @@
 @extends('layouts/app')
 
 @section('content')
-<h1 class="uppercase text-2xl text-center mt-10 mb-6 tracking-[0.5em] font-normal">Profiel</h1>
+<div class="bg-white">
+<h1 class="uppercase text-2xl text-center mt-10 mb-2 tracking-[0.5em] font-normal">Profiel</h1>
 <div class="w-full p-6 max-w-sm m-auto">
     <p class="text-fGrey">Tap to flip</a>
     <div class="card w-[336px] h-[211px] mt-2">
@@ -127,25 +128,25 @@
 
 </div>
 
-<div class="bg-fGreyApp mt-3 p-6 flex flex-grow flex-col rounded-tr-[3em]">
-    <div class="flex flex-row justify-center mb-4">
+<div class="bg-fWhite mt-3 p-6 flex flex-grow flex-col rounded-tr-[3em]">
+    <div class="flex flex-row justify-center my-4 ">
         <button class="btn-active uppercase text-sm text-fBlack font-medium bg-white py-2 px-14 rounded-l-lg choice transition-btn" data-for-tab="Profile">Profiel</button>
         <button class="uppercase text-sm text-fBlack font-medium bg-white py-2 px-9 rounded-r-lg choice transition-btn" data-for-tab="Settings">Instellingen</button>
     </div>
     <div class="hidden tab tab-active" data-tab="Profile">
-        <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fGreen">
+        <div class="bg-white p-3 flex flex-row items-center justify-between rounded-3xl border-2 border-b-fGreen sm:w-8/12 sm:m-auto">
             <div>
                 <h2 class="font-base text-fBlack text-base">Abonnement Spotify</h2>
                 <p class="font-base text-fBlack text-xs">Tot 10-12-2022</p>
             </div>
             <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fRed h-8 px-6 rounded-full">Stop</button>
         </div>
-        <div class="bg-white p-3 flex flex-row items-center justify-between rounded-2xl border-2 border-b-fRed">
+        <div class="bg-white p-3 flex flex-row items-center justify-between rounded-3xl border-2 border-b-fRed sm:w-8/12 sm:m-auto">
             <div>
                 <h2 class="font-base text-fBlack text-base">Abonnement Kinepolis</h2>
                 <p class="font-base text-fBlack text-xs">Verlopen</p>
             </div>
-            <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fGreen h-8 px-3 rounded-full">Vernieuw</button>
+            <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fGreen h-8 px-3 rounded-full ">Vernieuw</button>
         </div>
     </div>
     <div class="hidden tab px-3" data-tab="Settings">
@@ -216,9 +217,10 @@
     </div>
     <form method="post" action="{{ route('logout') }}">
         @csrf
-        <button class="uppercase w-full text-center text-base text-white tracking-widest font-medium bg-fGreen rounded-full py-2 mt-8 max-w-sm block m-auto">Uitloggen</button>
+        <button class="uppercase w-full text-center text-base text-white tracking-widest font-medium bg-fGreen rounded-full py-1 mt-8 mb-8 max-w-xs block m-auto">Uitloggen</button>
     </form>
 </div>
+                    </div>
 @endsection
 
 @section('footer-scripts')
