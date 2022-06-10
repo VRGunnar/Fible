@@ -626,6 +626,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-6{
   height: 1.5rem;
 }
+.h-\[211px\]{
+  height: 211px;
+}
+.h-full{
+  height: 100%;
+}
 .h-64{
   height: 16rem;
 }
@@ -680,8 +686,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-6{
   width: 1.5rem;
 }
+.w-\[336px\]{
+  width: 336px;
+}
 .w-20{
   width: 5rem;
+}
+.w-24{
+  width: 6rem;
 }
 .w-14{
   width: 3.5rem;
@@ -730,6 +742,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-around{
   justify-content: space-around;
+}
+.gap-y-2{
+  row-gap: 0.5rem;
+}
+.gap-x-3{
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+.gap-y-1{
+  row-gap: 0.25rem;
 }
 .overflow-hidden{
   overflow: hidden;
@@ -817,6 +839,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+.bg-fGrey\/30{
+  background-color: rgb(143 144 143 / 0.3);
+}
 .bg-fGreyApp{
   --tw-bg-opacity: 1;
   background-color: rgb(223 223 223 / var(--tw-bg-opacity));
@@ -832,12 +857,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
 .from-black{
   --tw-gradient-from: #000;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
 }
+.from-fGrey\/30{
+  --tw-gradient-from: rgb(143 144 143 / 0.3);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(143 144 143 / 0));
+}
 .to-fGrey{
   --tw-gradient-to: #8f908f;
+}
+.to-fBlack\/20{
+  --tw-gradient-to: rgb(24 39 46 / 0.2);
 }
 .fill-fGrey{
   fill: #8f908f;
@@ -1086,6 +1121,27 @@ div#social-links ul li:nth-child(1) a {
     }
 div#social-links ul li:nth-child(3) a {
         margin-right: 0rem;
+    }
+
+.cardInner {
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        position: relative;
+    }
+
+.cardInner.isFlipped {
+        transform: rotateY(180deg);
+    }
+
+.cardFace {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+
+.back {
+        transform: rotateY(180deg);
     }
 
 .active\:fill-fGreen:active{

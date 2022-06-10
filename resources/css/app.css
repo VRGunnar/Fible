@@ -56,4 +56,25 @@
     div#social-links ul li:nth-child(3) a {
         margin-right: 0rem;
     }
+
+    .cardInner {
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .cardInner.isFlipped {
+        transform: rotateY(180deg);
+    }
+
+    .cardFace {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+
+    .back {
+        transform: rotateY(180deg);
+    }
 }
