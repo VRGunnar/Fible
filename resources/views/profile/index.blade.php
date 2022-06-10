@@ -149,7 +149,7 @@
             <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fGreen h-8 px-3 rounded-full ">Vernieuw</button>
         </div>
     </div>
-    <div class="hidden tab px-3" data-tab="Settings">
+    <div class="hidden tab px-3 sm:w-8/12 sm:max-w-sm sm:m-auto" data-tab="Settings">
         <div class="flex flex-row items-center justify-between mb-2">
             <h3 class="text-base text-fBlack font-normal">Notificaties</h3>
             <svg class="w-14 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 23">
