@@ -34,5 +34,5 @@ Route::get('/discounts/subscription/{subscriptions}', [DiscountController::class
 
 
 //Profile page
-Route::get('/profile', [ProfileController::class, 'index']);
+Route::get('profile', [ProfileController::class, 'index']);
 Route::post('logout', [UserController::class, 'logout'])->name('logout');
