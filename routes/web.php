@@ -31,8 +31,7 @@ Route::get('/discounts', [DiscountController::class, 'index']);
 Route::get('/discounts/discount/{discounts}', [DiscountController::class, 'show']);
 Route::get('/discounts/subscription/{subscriptions}', [DiscountController::class, 'showSubscriptions']);
 
-
-
 //Profile page
-Route::get('profile', [ProfileController::class, 'index']);
+Route::get('/profile', [ProfileController::class, 'index']);
 Route::post('logout', [UserController::class, 'logout'])->name('logout');
+
