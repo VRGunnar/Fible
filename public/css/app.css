@@ -455,11 +455,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .right-16{
   right: 4rem;
 }
-.top-24{
-  top: 6rem;
-}
 .top-12{
   top: 3rem;
+}
+.top-24{
+  top: 6rem;
 }
 .col-start-1{
   grid-column-start: 1;
@@ -822,10 +822,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-bottom-color: rgb(37 196 154 / var(--tw-border-opacity));
 }
-.border-b-fRed{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(240 78 89 / var(--tw-border-opacity));
-}
 .bg-fWhite{
   --tw-bg-opacity: 1;
   background-color: rgb(239 240 239 / var(--tw-bg-opacity));
@@ -879,11 +875,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .stroke-fGreyApp{
   stroke: #DFDFDF;
 }
-.stroke-0{
-  stroke-width: 0;
-}
 .stroke-2{
   stroke-width: 2;
+}
+.stroke-0{
+  stroke-width: 0;
 }
 .object-contain{
   -o-object-fit: contain;
@@ -904,9 +900,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-4{
   padding: 1rem;
-}
-.p-0{
-  padding: 0px;
 }
 .p-3{
   padding: 0.75rem;
@@ -1143,26 +1136,6 @@ div#social-links ul li:nth-child(3) a {
         transform: rotateY(180deg);
     }
 /* abonnement timer lijn */
-.round-time-bar {
-        overflow: hidden;
-        margin: 0rem;
-      }
-.round-time-bar div {
-        height: 3px;
-        -webkit-animation: roundtime calc(var(--duration) * 1s);
-                animation: roundtime calc(var(--duration) * 1s);
-        transform-origin: left center;
-        background: #25C49A;
-        margin: auto;
-        margin-top: 2.3rem;
-        padding-bottom: 0rem;
-        width: 100%;
-        border-radius: 100px;
-      }
-.round-time-bar[data-style="smooth"] div {
-        -webkit-animation: roundtime calc(var(--duration) * 1s) linear forwards;
-                animation: roundtime calc(var(--duration) * 1s) linear forwards;
-      }
 @-webkit-keyframes roundtime {
         to {
           transform: scaleX(0); 
