@@ -580,12 +580,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-16{
   margin-bottom: 4rem;
 }
-.mr-auto{
-  margin-right: auto;
-}
-.ml-auto{
-  margin-left: auto;
-}
 .block{
   display: block;
 }
@@ -749,12 +743,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .overflow-hidden{
   overflow: hidden;
 }
-.overflow-y-hidden{
-  overflow-y: hidden;
-}
-.overflow-y-scroll{
-  overflow-y: scroll;
-}
 .rounded-3xl{
   border-radius: 1.5rem;
 }
@@ -864,6 +852,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .fill-fGrey{
   fill: #8f908f;
+}
+.fill-fRed{
+  fill: #F04E59;
 }
 .stroke-fGreyApp{
   stroke: #DFDFDF;
