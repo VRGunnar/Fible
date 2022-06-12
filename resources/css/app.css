@@ -108,4 +108,9 @@
           transform: scaleX(0); 
         }
       }
+
+      /* active menu items */
+      .active_opt {
+        fill: #25C49A;
+      }
 }

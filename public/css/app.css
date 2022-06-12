@@ -580,6 +580,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-16{
   margin-bottom: 4rem;
 }
+.mr-auto{
+  margin-right: auto;
+}
+.ml-auto{
+  margin-left: auto;
+}
 .block{
   display: block;
 }
@@ -730,9 +736,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between{
   justify-content: space-between;
 }
-.justify-around{
-  justify-content: space-around;
-}
 .gap-y-2{
   row-gap: 0.5rem;
 }
@@ -745,6 +748,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .overflow-hidden{
   overflow: hidden;
+}
+.overflow-y-hidden{
+  overflow-y: hidden;
+}
+.overflow-y-scroll{
+  overflow-y: scroll;
 }
 .rounded-3xl{
   border-radius: 1.5rem;
@@ -853,8 +862,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .to-fBlack\/20{
   --tw-gradient-to: rgb(24 39 46 / 0.2);
 }
-.fill-black{
-  fill: #000;
+.fill-fGrey{
+  fill: #8f908f;
 }
 .stroke-fGreyApp{
   stroke: #DFDFDF;
@@ -1134,13 +1143,17 @@ div#social-links ul li:nth-child(3) a {
           transform: scaleX(0); 
         }
       }
+/* active menu items */
+.active_opt {
+        fill: #25C49A;
+      }
 
 .hover\:fill-fGreen:hover{
   fill: #25C49A;
 }
 
-.active\:fill-fGreen:active{
-  fill: #25C49A;
+.active\:fill-green-700:active{
+  fill: #15803d;
 }
 
 @media (prefers-color-scheme: dark){
@@ -1232,6 +1245,10 @@ div#social-links ul li:nth-child(3) a {
 
   .sm\:justify-between{
     justify-content: space-between;
+  }
+
+  .sm\:overflow-y-scroll{
+    overflow-y: scroll;
   }
 
   .sm\:rounded-lg{

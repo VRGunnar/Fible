@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- social buttons -->
     @livewireStyles
 </head>
-<body class="bg-fWhite font-body flex flex-col h-screen">
+<body class="bg-fWhite font-body flex flex-col h-screen sm:overflow-y-scroll">
     
     @yield('content')
 
