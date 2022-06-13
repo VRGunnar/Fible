@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->float('price', 3, 2);
+            $table->float('price', 6, 2);
             $table->string('logo');
             $table->integer('duration');
             $table->mediumInteger('used_count');

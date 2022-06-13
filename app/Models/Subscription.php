@@ -17,4 +17,8 @@ class Subscription extends Model
     public function favorites() {
         return $this->hasMany(Favorite::class);
     }
+
+    public function checkouts() {
+        return $this->hasMany(Checkout::class);
+    }
 }
