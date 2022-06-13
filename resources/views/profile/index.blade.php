@@ -134,13 +134,15 @@
         <button class="uppercase text-sm text-fBlack font-medium bg-white py-2 px-9 rounded-r-lg choice transition-btn" data-for-tab="Settings">Instellingen</button>
     </div>
     <div class="hidden tab tab-active" data-tab="Profile">
+        @foreach($activeSubscriptions as $a)
         <div class="bg-white p-3 flex flex-row items-center justify-between rounded-3xl border-2 border-b-fGreen sm:w-8/12 sm:m-auto">
             <div>
-                <h2 class="font-base text-fBlack text-base">Abonnement Spotify</h2>
-                <p class="font-base text-fBlack text-xs">Tot 10-12-2022</p>
+                <h2 class="font-base text-fBlack text-base">Abonnement {{ $a->company }}</h2>
+                <p class="font-base text-fBlack text-xs">Tot {{ $a->date }}</p>
             </div>
             <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fRed h-8 px-6 rounded-full">Stop</button>
         </div>
+        @endforeach
         <div class="bg-white p-3 flex flex-row items-center justify-between rounded-3xl border-2 border-b-fRed sm:w-8/12 sm:m-auto">
             <div>
                 <h2 class="font-base text-fBlack text-base">Abonnement Kinepolis</h2>

@@ -512,6 +512,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.mx-12{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -701,6 +717,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-9\/12{
   width: 75%;
 }
+.w-48{
+  width: 12rem;
+}
+.w-40{
+  width: 10rem;
+}
+.w-32{
+  width: 8rem;
+}
 .max-w-sm{
   max-width: 24rem;
 }
@@ -734,6 +759,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col{
   flex-direction: column;
 }
+.content-center{
+  align-content: center;
+}
 .items-center{
   align-items: center;
 }
@@ -745,6 +773,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-around{
   justify-content: space-around;
+}
+.justify-items-center{
+  justify-items: center;
 }
 .gap-y-2{
   row-gap: 0.5rem;
@@ -936,6 +967,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-9{
   padding-left: 2.25rem;
   padding-right: 2.25rem;
+}
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .pb-12{
   padding-bottom: 3rem;

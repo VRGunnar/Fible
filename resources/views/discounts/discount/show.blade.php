@@ -13,11 +13,18 @@
                 @livewire('favorite-live', ['type' => 'Discount', 'typeId' => $discount->id, 'fill' => $discount->fill])
                 <h1 class="text-2xl text-fBlack pt-10 mb-10 w-10/12">{{ $discount->title }}</h1>
                 <p class=" text-sm mb-16">{{ $discount->description }}</p>
-                <a class="" href=""><button class="text-base w-11/12 text-white uppercase bg-fGreen border-none text-xs tracking-wide py-2 px-3 rounded-3xl mb-8 max-w-sm block m-auto text-center">gebruiken</button></a>
+                <form method="post" action="/checkout/discount/{{ $discount->id }}">
+                    @csrf
+                    <button id="checkout-button" data-id="{{ $discount->id }}" data-type="discount" class="text-base w-11/12 text-white uppercase bg-fGreen border-none text-xs tracking-wide py-2 px-3 rounded-3xl mb-8 max-w-sm block m-auto text-center">gebruiken</button>
+                </form>
                 <div class="pb-32">
                 {!! $shareComponent !!}
                 </div>
             </div>
         </div>
     </div>
+@endsection
+
+@section('footer-scripts')
+<script src="{{ asset('/js/components/stripe.js') }}"></script>
 @endsection
