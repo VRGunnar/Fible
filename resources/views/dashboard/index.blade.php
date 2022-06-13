@@ -34,52 +34,59 @@
 
     <main class="w-9/12 bg-white mt-16 pb-20 h-5/6 pl-24 pt-10" style="border-radius: 0px 50px 0px 0px;">
         <!-- <form class="flex flex-col flex-wrap h-full" action="#"> -->
-        <form class="grid grid-rows-2 h-full" action="#">
+        <form class="grid grid-rows-2 h-full" method="post" action="{{ url('/dashboard/store') }}">
+                @csrf
+
             <div class="grid-area: 1 / 1 / 2 / 2;">
                 <div class="w-4/5 pb-4">
-                    <label class="w-full" class="pl-1 pr-32" for="naam">Naam bedrijf</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="naam" name="naam" placeholder="Naam bedrijf">
+                    <label class="w-full" class="pl-1 pr-32" for="name">Naam bedrijf</label><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="name" name="name" placeholder="Naam bedrijf">
                 </div>
                 <div class="w-4/5 pb-4">
-                    <label class="w-full" for="titel">Titel korting</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="titel" name="titel" placeholder="Titel korting">
+                    <label class="w-full" for="title">Titel korting</label><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="title" name="title" placeholder="Titel korting">
                 </div>
                 <div class="w-4/5 pb-4">
                     <label class="w-full" for="description">Description</label><br>
                     <textarea class="bg-neutral-200 rounded-xl p-1 pl-4 w-full" id="description" rows="4" cols="25" name="description" placeholder="Description"></textarea>
                 </div>
                 <div class="w-4/5 pb-4">
-                <label class="w-full" for="prijs">Prijs</label><br>
-                <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="prijs" name="prijs" placeholder="Prijs"><br>
+                <label class="w-full" for="price">Prijs</label><br>
+                <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="price" name="price" placeholder="Prijs"><br>
                 </div>
                 <div class="w-4/5 pb-4">
-                    <label class="w-full" for="korting">Korting</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="korting" name="korting" placeholder="korting in %"><br>
+                    <label class="w-full" for="discount">Korting</label><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="discount" name="discount" placeholder="korting in %"><br>
                 </div>
                 <div class="w-4/5 pb-4">
-                    <label class="w-full" for="categorie">Categorie</label>
-                    <select id="categorie" name="categorie">
+                    <label class="w-full" for="category">Categorie</label>
+                    <select id="category" name="category">
                     <option value="supscription">Supscription</option>
                     <option value="korting">Korting</option>
                     </select>
                 </div>
-                <input class="rounded-full w-4/5 p-1 text-white" style="background-color: rgb(68,186,142);" type="button" value="Korting opslaan">
+                <input class="rounded-full w-4/5 p-1 text-white" style="background-color: rgb(68,186,142);" type="submit" value="Korting opslaan">
             </div>
 
 
             <div style="grid-area: 1 / 2 / 2 / 3;">
                 <div class="w-4/5 pb-4">
-                    <label class="w-full" for="locatie">Locatie</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="locatie" name="locatie" placeholder="Locatie">
+                    <label class="w-full" for="location">Locatie</label><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="location" name="location" placeholder="Locatie">
                 </div>
                 <div class="w-4/5 pb-4">
-                    <label class="w-full" for="duur ">Duur</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="duur" name="duur" placeholder="Duur">
+                    <label class="w-full" for="duration ">Kortingsperiode</label><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="duration" name="duration" placeholder="Kortingsperiode">
+                </div>
+                <div class="w-4/5 pb-4">
+                    <label class="w-full" for="logo ">Upload kortings afbeelding</label><br>
+                    <input type="file" id="logo" name="logo">
                 </div>
                 <div class="w-4/5 pb-4">
                 <a class="text-blue-600" href="{{ asset('css/contract_fible.pdf') }}" download>Download contract</a>
                 </div>
                 <input class="rounded-full w-4/5 p-1 text-white" style="background-color: rgb(240,79,90);" type="button" value="Annuleren">
+                <!-- <a href="" class="rounded-full w-4/5 p-1 text-white" style="background-color: rgb(240,79,90);">Annuleren</a> -->
             </div>
         </form> 
     </main>

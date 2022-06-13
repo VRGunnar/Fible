@@ -39,4 +39,6 @@ Route::get('/profile', [ProfileController::class, 'index']);
 
 
 //Dashboard page web
+Route::get('/dashboard/create', [DashboardController::class, 'create']);
+Route::post('/dashboard/store', [DashboardController::class, 'store']);
 Route::get('/dashboard', [DashboardController::class, 'index']);

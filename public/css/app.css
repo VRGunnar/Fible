@@ -464,26 +464,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .col-end-3{
   grid-column-end: 3;
 }
-.row-span-1{
-  grid-row: span 1 / span 1;
-}
 .row-start-1{
   grid-row-start: 1;
 }
 .row-start-2{
   grid-row-start: 2;
 }
-.row-start-auto{
-  grid-row-start: auto;
-}
 .row-end-2{
   grid-row-end: 2;
 }
 .row-end-3{
   grid-row-end: 3;
-}
-.row-end-4{
-  grid-row-end: 4;
 }
 .float-right{
   float: right;
@@ -556,9 +547,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .ml-10{
   margin-left: 2.5rem;
-}
-.mb-60{
-  margin-bottom: 15rem;
 }
 .mr-10{
   margin-right: 2.5rem;
@@ -692,9 +680,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-9\/12{
   width: 75%;
 }
-.w-60{
-  width: 15rem;
-}
 .w-4\/5{
   width: 80%;
 }
@@ -727,14 +712,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-11\/12{
   width: 91.666667%;
-}
-.w-1\/2{
-  width: 50%;
-}
-.w-fit{
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .max-w-6xl{
   max-width: 72rem;
@@ -777,9 +754,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-around{
   justify-content: space-around;
-}
-.gap-4{
-  gap: 1rem;
 }
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -987,35 +961,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-20{
   padding-bottom: 5rem;
 }
-.pl-10{
-  padding-left: 2.5rem;
+.pl-24{
+  padding-left: 6rem;
 }
 .pt-10{
   padding-top: 2.5rem;
+}
+.pb-4{
+  padding-bottom: 1rem;
 }
 .pl-1{
   padding-left: 0.25rem;
 }
 .pr-32{
   padding-right: 8rem;
-}
-.pr-6{
-  padding-right: 1.5rem;
-}
-.pr-12{
-  padding-right: 3rem;
-}
-.pl-20{
-  padding-left: 5rem;
-}
-.pl-24{
-  padding-left: 6rem;
-}
-.pt-2{
-  padding-top: 0.5rem;
-}
-.pb-4{
-  padding-bottom: 1rem;
 }
 .text-center{
   text-align: center;
