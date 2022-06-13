@@ -30,8 +30,8 @@ class StripeController extends Controller
               'quantity' => 1,
             ]],
             'mode' => 'payment',
-            'success_url' => 'https://example.com/success',
-            'cancel_url' => 'https://example.com/cancel',
+            'success_url' => 'http://localhost/profile',
+            'cancel_url' => 'http://localhost/order-cancelled',
             'payment_intent_data' => [
                 'metadata' => [
                     'discount_id' => $id,
@@ -65,7 +65,7 @@ class StripeController extends Controller
             ]],
             'mode' => 'payment',
             'success_url' => 'http://localhost/profile',
-            'cancel_url' => 'https://example.com/cancel',
+            'cancel_url' => 'http://localhost/order-cancelled',
             'payment_intent_data' => [
                 'metadata' => [
                     'subscription_id' => $id,
