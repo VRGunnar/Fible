@@ -579,17 +579,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-8{
   margin-bottom: 2rem;
 }
-.ml-3{
-  margin-left: 0.75rem;
-}
-.ml-0{
-  margin-left: 0px;
-}
 .mt-0\.5{
   margin-top: 0.125rem;
 }
 .mb-2{
   margin-bottom: 0.5rem;
+}
+.mt-1{
+  margin-top: 0.25rem;
 }
 .ml-6{
   margin-left: 1.5rem;
@@ -638,9 +635,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-screen{
   height: 100vh;
-}
-.h-6{
-  height: 1.5rem;
 }
 .h-\[211px\]{
   height: 211px;
@@ -699,8 +693,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-4\/5{
   width: 80%;
 }
-.w-6{
-  width: 1.5rem;
+.w-9\/12{
+  width: 75%;
 }
 .w-\[336px\]{
   width: 336px;
@@ -850,10 +844,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-bottom-color: rgb(37 196 154 / var(--tw-border-opacity));
 }
-.border-b-fRed{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(240 78 89 / var(--tw-border-opacity));
-}
 .bg-fWhite{
   --tw-bg-opacity: 1;
   background-color: rgb(239 240 239 / var(--tw-bg-opacity));
@@ -903,6 +893,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .fill-fGrey{
   fill: #8f908f;
+}
+.fill-fRed{
+  fill: #F04E59;
 }
 .stroke-fGreyApp{
   stroke: #DFDFDF;
@@ -959,6 +952,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .px-14{
   padding-left: 3.5rem;
@@ -1153,6 +1150,7 @@ div#social-links ul li:nth-child(1) a {
 div#social-links ul li:nth-child(3) a {
         margin-right: 0rem;
     }
+/* profiel studentenkaart flip */
 .cardInner {
         transition: transform 1s;
         transform-style: preserve-3d;
@@ -1170,14 +1168,28 @@ div#social-links ul li:nth-child(3) a {
 .back {
         transform: rotateY(180deg);
     }
+/* abonnement timer lijn */
+@-webkit-keyframes roundtime {
+        to {
+          transform: scaleX(0); 
+        }
+      }
+@keyframes roundtime {
+        to {
+          transform: scaleX(0); 
+        }
+      }
+/* active menu items */
+.active_opt {
+        fill: #25C49A;
+      }
 
-.active\:fill-fGreen:active{
+.hover\:fill-fGreen:hover{
   fill: #25C49A;
 }
 
-.active\:text-fGreen:active{
-  --tw-text-opacity: 1;
-  color: rgb(37 196 154 / var(--tw-text-opacity));
+.active\:fill-green-700:active{
+  fill: #15803d;
 }
 
 @media (prefers-color-scheme: dark){
@@ -1269,6 +1281,10 @@ div#social-links ul li:nth-child(3) a {
 
   .sm\:justify-between{
     justify-content: space-between;
+  }
+
+  .sm\:overflow-y-scroll{
+    overflow-y: scroll;
   }
 
   .sm\:rounded-lg{

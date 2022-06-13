@@ -127,28 +127,30 @@
     </div>
 
 </div>
-
 <div class="bg-fWhite mt-3 p-6 flex flex-grow flex-col rounded-tr-[3em]">
     <div class="flex flex-row justify-center my-4 ">
         <button class="btn-active uppercase text-sm text-fBlack font-medium bg-white py-2 px-14 rounded-l-lg choice transition-btn" data-for-tab="Profile">Profiel</button>
         <button class="uppercase text-sm text-fBlack font-medium bg-white py-2 px-9 rounded-r-lg choice transition-btn" data-for-tab="Settings">Instellingen</button>
     </div>
     <div class="hidden tab tab-active" data-tab="Profile">
+
         @foreach($activeSubscriptions as $a)
         <div class="bg-white p-3 flex flex-row items-center justify-between rounded-3xl border-2 border-b-fGreen sm:w-8/12 sm:m-auto">
             <div>
                 <h2 class="font-base text-fBlack text-base">Abonnement {{ $a->company }}</h2>
                 <p class="font-base text-fBlack text-xs">Tot {{ $a->date }}</p>
+
             </div>
-            <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fRed h-8 px-6 rounded-full">Stop</button>
+            <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fRed h-8 mt-1 px-6 rounded-full float-right">Stop</button>
         </div>
+
         @endforeach
         <div class="bg-white p-3 flex flex-row items-center justify-between rounded-3xl border-2 border-b-fRed sm:w-8/12 sm:m-auto">
             <div>
                 <h2 class="font-base text-fBlack text-base">Abonnement Kinepolis</h2>
                 <p class="font-base text-fBlack text-xs">Verlopen</p>
             </div>
-            <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fGreen h-8 px-3 rounded-full ">Vernieuw</button>
+            <button class="float-right uppercase font-normal tracking-widest text-sm text-fWhite bg-fGreen h-8 mt-1 px-3 rounded-full ">Vernieuw</button>
         </div>
     </div>
     <div class="hidden tab px-3 sm:w-8/12 sm:max-w-sm sm:m-auto" data-tab="Settings">

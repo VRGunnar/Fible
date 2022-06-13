@@ -57,6 +57,7 @@
         margin-right: 0rem;
     }
 
+    /* profiel studentenkaart flip */
     .cardInner {
         transition: transform 1s;
         transform-style: preserve-3d;
@@ -77,4 +78,44 @@
     .back {
         transform: rotateY(180deg);
     }
+
+    /* abonnement timer lijn */
+    .round-time-bar {
+        margin: 1rem;
+        overflow: hidden;
+        margin: 0rem;
+      } 
+      
+      .round-time-bar div {
+        height: 3px;
+        animation: roundtime calc(var(--duration) * 1s);
+        transform-origin: left center;
+        background: #25C49A;
+        margin: auto;
+        margin-top: 2.3rem;
+        padding-bottom: 0rem;
+        width: 100%;
+        border-radius: 100px;
+      }
+    
+      .round-time-bar[data-style="smooth"] div {
+        animation: roundtime calc(var(--duration) * 1s) linear forwards;
+      }
+    
+      
+      @keyframes roundtime {
+        to {
+          transform: scaleX(0); 
+        }
+      }
+
+      /* active menu items */
+      .active_opt {
+        fill: #25C49A;
+      }
+
+      .fill-fRed{
+        fill: #F04E59;
+      }
+      
 }
