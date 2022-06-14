@@ -8,8 +8,6 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StripeController;
 use Illuminate\Http\Request;
 use App\Models\Checkout;
-use App\Models\Subscription;
-use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------

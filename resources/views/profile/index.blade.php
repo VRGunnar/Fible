@@ -139,11 +139,9 @@
             <div>
                 <h2 class="font-base text-fBlack text-base">Abonnement {{ $a->company }}</h2>
                 <p class="font-base text-fBlack text-xs">Tot {{ $a->date }}</p>
-
             </div>
             <button class="uppercase font-normal tracking-widest text-sm text-fWhite bg-fRed h-8 mt-1 px-6 rounded-full float-right">Stop</button>
         </div>
-
         @endforeach
         <div class="bg-white p-3 flex flex-row items-center justify-between rounded-3xl border-2 border-b-fRed sm:w-8/12 sm:m-auto">
             <div>
