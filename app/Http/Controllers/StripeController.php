@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Stripe\Stripe;
 use App\Models\Discount;
 use App\Models\Subscription;
 use Illuminate\Support\Facades\Auth;
+use Stripe\Stripe;
 
 class StripeController extends Controller
 {
