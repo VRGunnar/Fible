@@ -5,6 +5,8 @@
 <h1 class="uppercase text-2xl text-center mt-10 mb-2 tracking-[0.5em] font-normal">Profiel</h1>
 <div class="w-full p-6 max-w-sm m-auto">
     <p class="text-fGrey">Tap to flip</a>
+
+    @foreach($user as $u)
     <div class="card w-[336px] h-[211px] mt-2">
         <div class="cardInner w-full h-full">
             <div class="cardFace w-full h-full front bg-gradient-to-br from-black to-fGrey rounded-xl p-4 drop-shadow-xl grid grid-cols-2 grid-rows-2 max-w-sm m-auto">
@@ -41,7 +43,7 @@
                 </svg>
                 <div class="col-start-1 col-end-3 row-start-2 row-end-3 flex flex-row justify-between">
                     <div class="font-base text-fWhite">
-                        <p>Gunnar Van Remoortere</p>
+                        <p>{{$u->first_name}} {{$u->last_name}}</p>
                         <p class="uppercase">Student</p>
                         <p>2021-2022</p>
                     </div>
@@ -61,23 +63,23 @@
             <div class="cardFace w-full h-full back bg-gradient-to-br from-black to-fGrey rounded-xl text-fWhite p-4 drop-shadow-xl flex flex-col gap-y-2 text-xs font-normal">
                 <div class="flex flex-row gap-x-3 items-center">
                     <p>Gebruiker:</p>
-                    <p class="w-full rounded-full px-2 py-1 bg-fGrey/30">r080448</p>
+                    <p class="w-full rounded-full px-2 py-1 bg-fGrey/30">{{$u->r_nr}}</p>
                 </div>
                 <div class="flex flex-row gap-x-3 items-center">
                     <p class="w-full">Persoonlijk nummer:</p>
-                    <p class="w-full rounded-full px-2 py-1 bg-fGrey/30">080448</p>
+                    <p class="w-full rounded-full px-2 py-1 bg-fGrey/30">{{$u->personal_nr}}</p>
                 </div>
                 <div class="flex flex-row gap-x-3 items-center">
                     <p>Lezersnummer bibliotheek:</p>
-                    <p class="w-full rounded-full px-2 py-1 bg-fGrey/30">802479171</p>
+                    <p class="w-full rounded-full px-2 py-1 bg-fGrey/30">{{$u->library_nr}}</p>
                 </div>
-                <div class="w-full rounded-full text-center px-2 py-2 bg-gradient-to-r from-fGrey/30 to-fBlack/20">THOMAS MORE (MECHELEN)</div>
+                <div class="w-full rounded-full text-center px-2 py-2 bg-gradient-to-r from-fGrey/30 to-fBlack/20">{{$u->school}} (MECHELEN)</div>
                 <div class="flex flex-row justify-between">
                     <div class="flex flex-col gap-y-1 text-xs font-normal">
                         <svg width="145" height="21.176" viewBox="0 0 145 21.176">
                             <path id="Union_15" data-name="Union 15" d="M-3441.526-2084.824V-2106H-3439v21.176Zm-69.3,0V-2106h2.524v21.176Zm-3.881,0V-2106h2.526v21.176Zm-69.3,0V-2106h2.525v21.176Zm139.949-.015V-2106h1.284v21.161Zm-5.01,0V-2106h3.769v21.161Zm-6.333,0V-2106h2.526v21.161Zm-3.767,0V-2106h2.525v21.161Zm-5.051,0V-2106h2.526v21.161Zm-5.049,0V-2106h2.524v21.161Zm-6.292,0V-2106h2.525v21.161Zm-5.01,0V-2106h1.241v21.161Zm-2.526,0V-2106h1.243v21.161Zm-2.524,0V-2106h1.243v21.161Zm-6.292,0V-2106h2.484v21.161Zm-5.05,0V-2106h1.243v21.161Zm-6.292,0V-2106h1.241v21.161Zm-3.808,0V-2106h1.282v21.161Zm-10.173,0V-2106h1.283v21.161Zm-5.01,0V-2106h3.769v21.161Zm-6.333,0V-2106h2.526v21.161Zm-3.767,0V-2106h2.525v21.161Zm-5.051,0V-2106h2.526v21.161Zm-5.049,0V-2106h2.524v21.161Zm-6.292,0V-2106h2.524v21.161Zm-5.01,0V-2106h1.242v21.161Zm-2.526,0V-2106h1.243v21.161Zm-2.524,0V-2106h1.243v21.161Zm-6.292,0V-2106h2.484v21.161Zm-5.05,0V-2106h1.242v21.161Zm-6.292,0V-2106h1.241v21.161Zm-3.808,0V-2106h1.282v21.161Z" transform="translate(3584 2106)" fill="#f5f5f4" />
                         </svg>
-                        <p>Kaartnummer: 21514925</p>
+                        <p>Kaartnummer: {{$u->card_nr}}</p>
                     </div>
                     <svg class="w-24" viewBox="0 0 170.08 72.28">
                         <defs>
@@ -125,6 +127,7 @@
             </div>
         </div>
     </div>
+    @endforeach
 
 </div>
 <div class="bg-fWhite mt-3 p-6 flex flex-grow flex-col rounded-tr-[3em]">
