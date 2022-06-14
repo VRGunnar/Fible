@@ -15,16 +15,16 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('first_name');
-            $table->string('last_name');
+            $table->string('name');
             $table->string('email')->unique();
-            $table->string('password');
-            $table->boolean('enrolled');
-            $table->string('r_nr');
-            $table->string('personal_nr');
-            $table->string('library_nr');
-            $table->string('school');
-            $table->string('card_nr');
+            $table->string('password')->nullable();
+            $table->string('azure_id', 36)->default('azure_id');
+            $table->boolean('enrolled')->default(1);
+            $table->string('r_nr', 8)->default('r0123456');
+            $table->string('personal_nr', 7)->default('0123456');
+            $table->string('library_nr')->default('123456789');
+            $table->string('school')->default('Thomas More (Mechelen)');
+            $table->string('card_nr')->default('21528337');
             $table->rememberToken();
             $table->timestamps();
         });
