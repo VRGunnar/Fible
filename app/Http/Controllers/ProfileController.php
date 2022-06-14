@@ -19,7 +19,8 @@ class ProfileController extends Controller
 
     public function index(){
         $checkouts = Checkout::where('user_id', Auth::user()->id)->whereNotNull('subscription_id')->get();
-        
+        $users = \DB::table('users')->where('id', Auth::user()->id)->get();
+
         $activeSubscriptions = [];
         $date = 'date';
         foreach($checkouts as $c) {
@@ -29,6 +30,7 @@ class ProfileController extends Controller
             ->format('d/m/Y H:i:s'); 
             array_push($activeSubscriptions, $activeSubscription);
         }
+        $data['user'] = $users;
         $data['activeSubscriptions'] = $activeSubscriptions;
         return view('Profile/index', $data);
     }
