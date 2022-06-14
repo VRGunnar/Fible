@@ -34,29 +34,29 @@
 
     <main class="w-9/12 bg-white mt-16 pb-20 h-5/6 pl-24 pt-10" style="border-radius: 0px 50px 0px 0px;">
         <!-- <form class="flex flex-col flex-wrap h-full" action="#"> -->
-        <form class="grid grid-rows-2 h-full" method="post" action="{{ url('/dashboard/store') }}">
+        <form class="grid grid-rows-2 h-full" action="{{ url('/dashboard/store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
             <div class="grid-area: 1 / 1 / 2 / 2;">
                 <div class="w-4/5 pb-4">
-                    <label class="w-full" class="pl-1 pr-32" for="name">Naam bedrijf</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="name" name="name" placeholder="Naam bedrijf">
+                    <label class="w-full" class="pl-1 pr-32" for="naam">Naam bedrijf</label><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="naam" name="naam" placeholder="Naam bedrijf" required>
                 </div>
                 <div class="w-4/5 pb-4">
                     <label class="w-full" for="title">Titel korting</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="title" name="title" placeholder="Titel korting">
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="title" name="title" placeholder="Titel korting" required>
                 </div>
                 <div class="w-4/5 pb-4">
                     <label class="w-full" for="description">Description</label><br>
-                    <textarea class="bg-neutral-200 rounded-xl p-1 pl-4 w-full" id="description" rows="4" cols="25" name="description" placeholder="Description"></textarea>
+                    <textarea class="bg-neutral-200 rounded-xl p-1 pl-4 w-full" id="description" rows="4" cols="25" name="description" placeholder="Description" required></textarea>
                 </div>
                 <div class="w-4/5 pb-4">
                 <label class="w-full" for="price">Prijs</label><br>
-                <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="price" name="price" placeholder="Prijs"><br>
+                <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="price" name="price" placeholder="Prijs" required><br>
                 </div>
                 <div class="w-4/5 pb-4">
                     <label class="w-full" for="discount">Korting</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="discount" name="discount" placeholder="korting in %"><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 w-full" type="text" id="discount" name="discount" placeholder="korting in %" required><br>
                 </div>
                 <div class="w-4/5 pb-4">
                     <label class="w-full" for="category">Categorie</label>
@@ -71,20 +71,29 @@
 
             <div style="grid-area: 1 / 2 / 2 / 3;">
                 <div class="w-4/5 pb-4">
-                    <label class="w-full" for="location">Locatie</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="location" name="location" placeholder="Locatie">
+                    <label class="w-full" for="website">Website</label><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="website" name="website" placeholder="Website" required>
                 </div>
                 <div class="w-4/5 pb-4">
                     <label class="w-full" for="duration ">Kortingsperiode</label><br>
-                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="duration" name="duration" placeholder="Kortingsperiode">
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="duration" name="duration" placeholder="Kortingsperiode" required>
                 </div>
                 <div class="w-4/5 pb-4">
                     <label class="w-full" for="logo ">Upload kortings afbeelding</label><br>
-                    <input type="file" id="logo" name="logo">
+                    <input type="file" id="logo" name="logo" required>
                 </div>
                 <div class="w-4/5 pb-4">
                 <a class="text-blue-600" href="{{ asset('css/contract_fible.pdf') }}" download>Download contract</a>
                 </div>
+                <div class="w-4/5 pb-4">
+                    <label class="w-full" for="contract ">Upload getekend contract</label><br>
+                    <input type="file" id="contract" name="contract" required>
+                </div>
+                <div class="w-4/5 pb-4">
+                    <label class="w-full" for="account_number ">Rekeningnummer</label><br>
+                    <input class="bg-neutral-200 rounded-full p-1 pl-4 mr-10 w-full" type="text" id="account_number" name="account_number" placeholder="Rekeningnummer" required>
+                </div>
+                
                 <input class="rounded-full w-4/5 p-1 text-white" style="background-color: rgb(240,79,90);" type="button" value="Annuleren">
                 <!-- <a href="" class="rounded-full w-4/5 p-1 text-white" style="background-color: rgb(240,79,90);">Annuleren</a> -->
             </div>
