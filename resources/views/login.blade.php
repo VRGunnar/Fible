@@ -15,5 +15,6 @@
         </div>
         <button class="w-full py-2 my-4 bg-fGreen rounded-full text-white uppercase font-medium tracking-widest" type="submit">Log in</button>
     </form>
+    <a href="/login/microsoft" class="uppercase w-full text-center text-sm text-white tracking-widest font-medium bg-fGreen rounded-full py-2 mt-2 mb-8 max-w-xs block m-auto">Sign in with SSO</a>
 </div>
 @endsection

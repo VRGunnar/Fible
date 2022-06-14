@@ -20,6 +20,7 @@ return new class extends Migration
             $table->float('price', 6, 2);
             $table->string('logo');
             $table->integer('duration');
+            $table->string('company');
             $table->mediumInteger('used_count');
             $table->timestamps();
         });
